@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace CapyKit.Extensions
 {
+    /// <summary> Provides static extentions methods for providing additional functionality for <see cref="Enum"/> types. </summary>
     public static class EnumerationExtensions
     {
         #region Methods

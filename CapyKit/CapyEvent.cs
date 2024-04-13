@@ -4,6 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using CapyKit.Attributes;
 using CapyKit.Extensions;
 
 namespace CapyKit
@@ -14,7 +15,7 @@ namespace CapyKit
     /// <remarks>
     /// Because consumers of CapyKit may have varied ways of handling logging, the <see cref="CapyEventReporter"/> provides 
     /// a way for subscribers to recieve events for various "events" within the library. These can be thought of as 
-    /// a logging solution for CapyKit.
+    /// a logging solution for CapyKit. Consumers are free to treat these events however they see fit.
     /// </remarks>
     public static class CapyEventReporter
     {
@@ -24,6 +25,10 @@ namespace CapyKit
         /// A dictionary storing event handlers and their corresponding origins for each subscription level.
         /// </summary>
         private static Dictionary<EventLevel, List<(CapyEventHandler Handler, string origin)>> subscribers = new Dictionary<EventLevel, List<(CapyEventHandler Handler, string origin)>>();
+
+        /// <summary> A hash set storing unique identifiers for events intended to only be emitted once. </summary>
+        /// <seealso cref="EmitEventOnce(EventLevel, string, string, string, object[])"/>
+        private static HashSet<string> uniqueIdentifiers = new HashSet<string>();
 
         #endregion
 
@@ -73,13 +78,16 @@ namespace CapyKit
         /// <summary> Emits an event with the given severity level, message, and method name. </summary>
         /// <remarks>
         /// In order to allow for efficient calling member access via <see cref="CallerMemberNameAttribute"/>
-        /// , it is suggested that <paramref name="args"/> is defined explicitly for formatted messages.
+        /// ,
+        ///  it is suggested that <paramref name="args"/> is defined explicitly for formatted messages.
         /// </remarks>
         /// <param name="eventLevel"> The severity level of the event. </param>
-        /// <param name="message">    The message describing the reason for the event. </param>
-        /// <param name="method">
-        ///     (Optional) The name of the method where the event was raised. String formatting for <paramref name="args"/>
+        /// <param name="message">
+        ///     The message describing the reason for the event. String formatting for <paramref name="args"/>
         ///     is accepted.
+        /// </param>
+        /// <param name="method">
+        ///     (Optional) The name of the method where the event was raised.
         /// </param>
         /// <param name="args">
         ///     A variable-length parameters list containing arguments for formatting the message.
@@ -88,6 +96,7 @@ namespace CapyKit
         /// CapyEventReporter.EmitEvent(EventLevel.Error, "Could not find the description for {0}.",
         /// args: new[] { enumeration });
         /// </example>
+        /// <seealso cref="CallerMemberNameAttribute"/>
         internal static void EmitEvent(EventLevel eventLevel, string message, [CallerMemberName] string method = null, params object[] args)
         {
             if (!subscribers.ContainsKey(eventLevel))
@@ -103,6 +112,40 @@ namespace CapyKit
             {
                 subscriber.Handler(capyEventArgs);
             }
+        }
+
+        /// <summary>
+        /// Emits an event with the given severity level, message, unique identifier, and method name one
+        /// time.
+        /// </summary>
+        /// <remarks>
+        /// This method is similar to <see cref="EmitEvent(EventLevel, string, string, string, object[])"/>
+        /// , but requires a unique identifier (such as a <see cref="Guid"/>) to prevent duplicate
+        /// emissions.
+        /// </remarks>
+        /// <param name="eventLevel">       The severity level of the event. </param>
+        /// <param name="message">
+        ///     The message describing the reason for the event. String formatting for <paramref name="args"/>
+        ///     is accepted.
+        /// </param>
+        /// <param name="uniqueIdentifier"> A unique identifier for the event emission. </param>
+        /// <param name="method">
+        ///     (Optional) The name of the method where the event was raised.
+        /// </param>
+        /// <param name="args">
+        ///     A variable-length parameters list containing arguments for formatting the message.
+        /// </param>
+        /// <seealso cref="CallerMemberNameAttribute"/>
+        /// <seealso cref="Guid"/>
+        internal static void EmitEventOnce(EventLevel eventLevel, string message, string uniqueIdentifier, [CallerMemberName] string method = null, params object[] args)
+        {
+            if(uniqueIdentifiers.Contains(uniqueIdentifier))
+            {
+                return;
+            }
+
+            uniqueIdentifiers.Add(uniqueIdentifier);
+            EmitEvent(eventLevel, message, method: method, args: args);
         }
 
         #endregion
@@ -162,12 +205,19 @@ namespace CapyKit
     public enum EventLevel
     {
         /// <summary> Represents a critical error that requires immediate attention. </summary>
+        [EnumerationDescription("Represents a critical error that requires immediate attention.")]
         Critical = 0,
         /// <summary> Represents an error that prevents the normal execution of the application.  </summary>
+        [EnumerationDescription("Represents an error that prevents the normal execution of the application.")]
         Error = 1,
+        /// <summary> Represents a warning indicating a non-critical issue that should be addressed. </summary>
+        [EnumerationDescription("Represents a warning indicating a non-critical issue that should be addressed.")]
+        Warning = 2,
         /// <summary> Represents informational messages that provide useful context to the consumer. </summary>
-        Information = 2,
+        [EnumerationDescription("Represents informational messages that provide useful context to the consumer.")]
+        Information = 3,
         /// <summary> Represents detailed messages that are typically used for debugging purposes. </summary>
-        Debug = 3
+        [EnumerationDescription("Represents detailed messages that are typically used for debugging purposes.")]
+        Debug = 4
     }
 }
