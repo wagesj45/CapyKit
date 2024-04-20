@@ -1,0 +1,74 @@
+# LINQExtensions Class
+
+
+Provides static extension methods for performing common LINQ operations on <a href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1" target="_blank" rel="noopener noreferrer">IEnumerable(T)</a> and <a href="https://learn.microsoft.com/dotnet/api/system.linq.iqueryable-1" target="_blank" rel="noopener noreferrer">IQueryable(T)</a> collections.
+
+
+
+## Definition
+**Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+
+**C#**
+``` C#
+public static class LINQExtensions
+```
+**VB**
+``` VB
+<ExtensionAttribute>
+Public NotInheritable Class LINQExtensions
+```
+**C++**
+``` C++
+[ExtensionAttribute]
+public ref class LINQExtensions abstract sealed
+```
+**F#**
+``` F#
+[<AbstractClassAttribute>]
+[<SealedAttribute>]
+[<ExtensionAttribute>]
+type LINQExtensions = class end
+```
+
+<table><tr><td><strong>Inheritance</strong></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  →  LINQExtensions</td></tr>
+</table>
+
+
+
+## Methods
+<table>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_Distinct__2">Distinct(T, U)</a></td>
+<td>Enumerates distinct items in this collection as defined by the key <em>property</em>.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_Filter__1">Filter(T)(IEnumerable(T), Func(T, Boolean))</a></td>
+<td>Filters out items matching a <em>predicate</em> from the collection.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_Filter__1_1">Filter(T)(IQueryable(T), Expression(Func(T, Boolean)))</a></td>
+<td>Filters out items matching a <em>predicate</em> from the collection.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_LeftOuterJoin__4">LeftOuterJoin(T, U, TKey, R)(IEnumerable(T), IEnumerable(U), Func(T, TKey), Func(U, TKey), Func(T, IEnumerable(U), R), Func(T, U))</a></td>
+<td>An IEnumable&lt;T&gt; extension method that left outer join.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_LeftOuterJoin__4_1">LeftOuterJoin(T, U, TKey, R)(IQueryable(T), IQueryable(U), Expression(Func(T, TKey)), Expression(Func(U, TKey)), Func(T, IEnumerable(U), R), Func(T, U))</a></td>
+<td>An IQueryable&lt;T&gt; extension method that left outer join.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_Page__1">Page(T)(IEnumerable(T), Int32, Int32)</a></td>
+<td>Get a page of items from a collection, skipping <em>pageNumber</em> pages of <em>pageSize</em> items per page.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_Page__1_1">Page(T)(IQueryable(T), Int32, Int32)</a></td>
+<td>Get a page of items from a collection, skipping <em>pageNumber</em> pages of <em>pageSize</em> items per page.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_PageCount__1">PageCount(T)(IEnumerable(T), Int32)</a></td>
+<td>The number of pages of <em>pageSize</em> size in the given collection.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Extensions_LINQExtensions_PageCount__1_1">PageCount(T)(IQueryable(T), Int32)</a></td>
+<td>The number of pages of <em>pageSize</em> size in the given collection.</td></tr>
+</table>
+
+## See Also
+
+
+#### Reference
+<a href="N_CapyKit_Extensions">CapyKit.Extensions Namespace</a>  
