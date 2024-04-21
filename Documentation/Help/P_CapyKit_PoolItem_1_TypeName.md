@@ -6,7 +6,7 @@ Gets the name of the <a href="https://learn.microsoft.com/dotnet/api/system.type
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -28,5 +28,5 @@ The name of the <a href="https://learn.microsoft.com/dotnet/api/system.type" tar
 
 
 #### Reference
-<a href="T_CapyKit_PoolItem_1">PoolItem(T) Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_PoolItem_1.md">PoolItem(T) Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

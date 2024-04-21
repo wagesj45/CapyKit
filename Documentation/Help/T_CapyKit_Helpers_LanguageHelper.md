@@ -6,7 +6,7 @@
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -26,14 +26,14 @@ type LanguageHelper = class end
 ## Constructors
 <table>
 <tr>
-<td><a href="M_CapyKit_Helpers_LanguageHelper__ctor">LanguageHelper</a></td>
+<td><a href="M_CapyKit_Helpers_LanguageHelper__ctor.md">LanguageHelper</a></td>
 <td>Initializes a new instance of the LanguageHelper class</td></tr>
 </table>
 
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Helpers_LanguageHelper_CamelCaseToHumanReadable">CamelCaseToHumanReadable</a></td>
+<td><a href="M_CapyKit_Helpers_LanguageHelper_CamelCaseToHumanReadable.md">CamelCaseToHumanReadable</a></td>
 <td>Converts camel case text to human readable text.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td>
@@ -59,4 +59,4 @@ type LanguageHelper = class end
 
 
 #### Reference
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

@@ -6,7 +6,7 @@ A object comparer that can accept a lambda expression to compare properties.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -37,7 +37,7 @@ using System; using System.Collections.Generic; using System.Linq; class Program
 ## Constructors
 <table>
 <tr>
-<td><a href="M_CapyKit_PropertyComparer_2__ctor">PropertyComparer(T, U)</a></td>
+<td><a href="M_CapyKit_PropertyComparer_2__ctor.md">PropertyComparer(T, U)</a></td>
 <td>Constructor.</td></tr>
 </table>
 
@@ -47,7 +47,7 @@ using System; using System.Collections.Generic; using System.Linq; class Program
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals(Object)</a></td>
 <td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_PropertyComparer_2_Equals">Equals(T, T)</a></td>
+<td><a href="M_CapyKit_PropertyComparer_2_Equals.md">Equals(T, T)</a></td>
 <td>Determines whether the specified properties are equal.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td>
@@ -56,7 +56,7 @@ using System; using System.Collections.Generic; using System.Linq; class Program
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode()</a></td>
 <td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_PropertyComparer_2_GetHashCode">GetHashCode(T)</a></td>
+<td><a href="M_CapyKit_PropertyComparer_2_GetHashCode.md">GetHashCode(T)</a></td>
 <td>Returns a hash code for the specified object.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td>
@@ -69,8 +69,15 @@ using System; using System.Collections.Generic; using System.Linq; class Program
 <td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 </table>
 
+## Fields
+<table>
+<tr>
+<td><a href="F_CapyKit_PropertyComparer_2_expression.md">expression</a></td>
+<td>The expression to retrieve the property.</td></tr>
+</table>
+
 ## See Also
 
 
 #### Reference
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

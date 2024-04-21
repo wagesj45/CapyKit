@@ -6,7 +6,7 @@
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Pbkdf2Algorithm_Encrypt">Encrypt</a></td>
+<td><a href="M_CapyKit_Pbkdf2Algorithm_Encrypt.md">Encrypt</a></td>
 <td>Encrypts the given password using a PBKDF2 algorithm.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td>
@@ -32,5 +32,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_Pbkdf2Algorithm">Pbkdf2Algorithm Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

@@ -6,26 +6,26 @@ Gets the severity level of the event.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
-public EventLevel Level { get; }
+public EventLevel Level { get; private set; }
 ```
 **F#**
 ``` F#
-member Level : EventLevel with get
+member Level : EventLevel with get, private set
 ```
 
 
 
 #### Property Value
-<a href="T_CapyKit_EventLevel">EventLevel</a>
+<a href="T_CapyKit_EventLevel.md">EventLevel</a>
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_CapyEventArgs">CapyEventArgs Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_CapyEventArgs.md">CapyEventArgs Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

@@ -9,7 +9,7 @@
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals(Object)</a></td>
 <td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_PropertyComparer_2_Equals">Equals(T, T)</a></td>
+<td><a href="M_CapyKit_PropertyComparer_2_Equals.md">Equals(T, T)</a></td>
 <td>Determines whether the specified properties are equal.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td>
@@ -18,7 +18,7 @@
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode()</a></td>
 <td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_PropertyComparer_2_GetHashCode">GetHashCode(T)</a></td>
+<td><a href="M_CapyKit_PropertyComparer_2_GetHashCode.md">GetHashCode(T)</a></td>
 <td>Returns a hash code for the specified object.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td>
@@ -35,5 +35,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_PropertyComparer_2">PropertyComparer(T, U) Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_PropertyComparer_2.md">PropertyComparer(T, U) Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

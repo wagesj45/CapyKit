@@ -6,7 +6,7 @@ Releases the lock on the specified item and returns it to the pool.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -24,14 +24,14 @@ member ReleaseItem :
 
 
 #### Parameters
-<dl><dt>  <a href="T_CapyKit_PoolItem_1">PoolItem</a>(<a href="T_CapyKit_Pool_1">T</a>)</dt><dd>The item to release.</dd></dl>
+<dl><dt>  <a href="T_CapyKit_PoolItem_1.md">PoolItem</a>(<a href="T_CapyKit_Pool_1.md">T</a>)</dt><dd>The item to release.</dd></dl>
 
 ## Remarks
-This method sets the <a href="P_CapyKit_PoolItem_1_Locked">Locked</a> flag to false so that it can be retrieved by <a href="M_CapyKit_Pool_1_GetAvailableItem">GetAvailableItem()</a>.
+This method sets the <a href="P_CapyKit_PoolItem_1_Locked.md">Locked</a> flag to false so that it can be retrieved by <a href="M_CapyKit_Pool_1_GetAvailableItem.md">GetAvailableItem()</a>.
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_Pool_1">Pool(T) Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pool_1.md">Pool(T) Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

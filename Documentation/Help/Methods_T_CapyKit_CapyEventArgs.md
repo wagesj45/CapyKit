@@ -29,5 +29,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_CapyEventArgs">CapyEventArgs Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_CapyEventArgs.md">CapyEventArgs Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

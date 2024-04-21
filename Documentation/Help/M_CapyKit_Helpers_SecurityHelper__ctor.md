@@ -1,12 +1,12 @@
 # SecurityHelper Constructor
 
 
-Initializes a new instance of the <a href="T_CapyKit_Helpers_SecurityHelper">SecurityHelper</a> class
+Initializes a new instance of the <a href="T_CapyKit_Helpers_SecurityHelper.md">SecurityHelper</a> class
 
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -24,5 +24,5 @@ new : unit -> SecurityHelper
 
 
 #### Reference
-<a href="T_CapyKit_Helpers_SecurityHelper">SecurityHelper Class</a>  
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
+<a href="T_CapyKit_Helpers_SecurityHelper.md">SecurityHelper Class</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

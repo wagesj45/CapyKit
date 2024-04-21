@@ -6,22 +6,24 @@ An attribute class for decorating enumeration fields with a description.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Attributes">CapyKit.Attributes</a>  
+**Namespace:** <a href="N_CapyKit_Attributes.md">CapyKit.Attributes</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
+[AttributeUsageAttribute(AttributeTargets.Field)]
 public class EnumerationDescriptionAttribute : EnumerationAttribute<string>
 ```
 **F#**
 ``` F#
+[<AttributeUsageAttribute(AttributeTargets.Field)>]
 type EnumerationDescriptionAttribute = 
     class
         inherit EnumerationAttribute<string>
     end
 ```
 
-<table><tr><td><strong>Inheritance</strong></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  →  <a href="https://learn.microsoft.com/dotnet/api/system.attribute" target="_blank" rel="noopener noreferrer">Attribute</a>  →  <a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute</a>(<a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>)  →  EnumerationDescriptionAttribute</td></tr>
+<table><tr><td><strong>Inheritance</strong></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  →  <a href="https://learn.microsoft.com/dotnet/api/system.attribute" target="_blank" rel="noopener noreferrer">Attribute</a>  →  <a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute</a>(<a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>)  →  EnumerationDescriptionAttribute</td></tr>
 </table>
 
 
@@ -29,7 +31,7 @@ type EnumerationDescriptionAttribute =
 ## Constructors
 <table>
 <tr>
-<td><a href="M_CapyKit_Attributes_EnumerationDescriptionAttribute__ctor">EnumerationDescriptionAttribute</a></td>
+<td><a href="M_CapyKit_Attributes_EnumerationDescriptionAttribute__ctor.md">EnumerationDescriptionAttribute</a></td>
 <td>Initializes a new instance of the EnumerationDescriptionAttribute class with the specified description.</td></tr>
 </table>
 
@@ -39,8 +41,8 @@ type EnumerationDescriptionAttribute =
 <td><a href="https://learn.microsoft.com/dotnet/api/system.attribute.typeid" target="_blank" rel="noopener noreferrer">TypeId</a></td>
 <td>When implemented in a derived class, gets a unique identifier for this <a href="https://learn.microsoft.com/dotnet/api/system.attribute" target="_blank" rel="noopener noreferrer">Attribute</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.attribute" target="_blank" rel="noopener noreferrer">Attribute</a>)</td></tr>
 <tr>
-<td><a href="P_CapyKit_Attributes_EnumerationAttribute_1_Value">Value</a></td>
-<td>Initializes a new instance of the <a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute(T)</a> class with a specified value.<br />(Inherited from <a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute(T)</a>)</td></tr>
+<td><a href="P_CapyKit_Attributes_EnumerationAttribute_1_Value.md">Value</a></td>
+<td>Initializes a new instance of the <a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute(T)</a> class with a specified value.<br />(Inherited from <a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute(T)</a>)</td></tr>
 </table>
 
 ## Methods
@@ -75,5 +77,5 @@ type EnumerationDescriptionAttribute =
 
 
 #### Reference
-<a href="N_CapyKit_Attributes">CapyKit.Attributes Namespace</a>  
-<a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute(T)</a>  
+<a href="N_CapyKit_Attributes.md">CapyKit.Attributes Namespace</a>  
+<a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute(T)</a>  

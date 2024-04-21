@@ -6,7 +6,7 @@ Compresses a given object to a string using `base64` encoding of `gzip` format.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -34,5 +34,5 @@ A string in `base64` encoding.
 
 
 #### Reference
-<a href="T_CapyKit_Helpers_CompressionHelper">CompressionHelper Class</a>  
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
+<a href="T_CapyKit_Helpers_CompressionHelper.md">CompressionHelper Class</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

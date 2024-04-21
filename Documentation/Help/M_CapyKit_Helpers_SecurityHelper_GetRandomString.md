@@ -6,7 +6,7 @@ A convenience method to generate a random string of the specified length using a
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -34,8 +34,8 @@ static member GetRandomString :
 
 
 #### Reference
-<a href="T_CapyKit_Helpers_SecurityHelper">SecurityHelper Class</a>  
-<a href="Overload_CapyKit_Helpers_SecurityHelper_GetRandomString">GetRandomString Overload</a>  
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
-<a href="T_CapyKit_Helpers_ValidCharacterCollection">ValidCharacterCollection</a>  
-<a href="M_CapyKit_Helpers_SecurityHelper_GetRandomString_1">GetRandomString(Int32, ValidCharacterCollection[])</a>  
+<a href="T_CapyKit_Helpers_SecurityHelper.md">SecurityHelper Class</a>  
+<a href="Overload_CapyKit_Helpers_SecurityHelper_GetRandomString.md">GetRandomString Overload</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  
+<a href="T_CapyKit_Helpers_ValidCharacterCollection.md">ValidCharacterCollection</a>  
+<a href="M_CapyKit_Helpers_SecurityHelper_GetRandomString_1.md">GetRandomString(Int32, ValidCharacterCollection[])</a>  

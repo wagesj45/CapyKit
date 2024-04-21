@@ -6,7 +6,7 @@ A *T* extension method that parses a string into an enumeration.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
+**Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -51,6 +51,6 @@ Extension Methods (C# Programming Guide)</a>.
 
 
 #### Reference
-<a href="T_CapyKit_Extensions_EnumerationExtensions">EnumerationExtensions Class</a>  
-<a href="Overload_CapyKit_Extensions_EnumerationExtensions_Parse">Parse Overload</a>  
-<a href="N_CapyKit_Extensions">CapyKit.Extensions Namespace</a>  
+<a href="T_CapyKit_Extensions_EnumerationExtensions.md">EnumerationExtensions Class</a>  
+<a href="Overload_CapyKit_Extensions_EnumerationExtensions_Parse.md">Parse Overload</a>  
+<a href="N_CapyKit_Extensions.md">CapyKit.Extensions Namespace</a>  

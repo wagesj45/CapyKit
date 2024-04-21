@@ -6,7 +6,7 @@
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Helpers_LanguageHelper_CamelCaseToHumanReadable">CamelCaseToHumanReadable</a></td>
+<td><a href="M_CapyKit_Helpers_LanguageHelper_CamelCaseToHumanReadable.md">CamelCaseToHumanReadable</a></td>
 <td>Converts camel case text to human readable text.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td>
@@ -32,5 +32,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_Helpers_LanguageHelper">LanguageHelper Class</a>  
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
+<a href="T_CapyKit_Helpers_LanguageHelper.md">LanguageHelper Class</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

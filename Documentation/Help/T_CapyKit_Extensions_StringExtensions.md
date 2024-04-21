@@ -6,7 +6,7 @@ Provides static extentions methods for providing additional functionality for <a
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
+**Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -29,10 +29,10 @@ type StringExtensions = class end
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Extensions_StringExtensions_IfNullOrEmpty">IfNullOrEmpty</a></td>
+<td><a href="M_CapyKit_Extensions_StringExtensions_IfNullOrEmpty.md">IfNullOrEmpty</a></td>
 <td>Replaces a null or empty string with a specified replacement string.</td></tr>
 <tr>
-<td><a href="M_CapyKit_Extensions_StringExtensions_IfNullOrWhiteSpace">IfNullOrWhiteSpace</a></td>
+<td><a href="M_CapyKit_Extensions_StringExtensions_IfNullOrWhiteSpace.md">IfNullOrWhiteSpace</a></td>
 <td>Replaces a null or whitespace string with a specified replacement string.</td></tr>
 </table>
 
@@ -40,4 +40,4 @@ type StringExtensions = class end
 
 
 #### Reference
-<a href="N_CapyKit_Extensions">CapyKit.Extensions Namespace</a>  
+<a href="N_CapyKit_Extensions.md">CapyKit.Extensions Namespace</a>  

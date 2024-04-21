@@ -21,7 +21,7 @@
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td>
 <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_Password_ToString">ToString</a></td>
+<td><a href="M_CapyKit_Password_ToString.md">ToString</a></td>
 <td>Returns a string that represents the current object.<br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object.ToString()</a>)</td></tr>
 </table>
 
@@ -29,5 +29,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_Password">Password Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Password.md">Password Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

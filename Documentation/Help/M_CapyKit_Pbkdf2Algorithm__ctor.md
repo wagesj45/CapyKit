@@ -1,12 +1,12 @@
 # Pbkdf2Algorithm Constructor
 
 
-Initializes a new instance of the <a href="T_CapyKit_Pbkdf2Algorithm">Pbkdf2Algorithm</a> class
+Initializes a new instance of the <a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm</a> class
 
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -24,5 +24,5 @@ new : unit -> Pbkdf2Algorithm
 
 
 #### Reference
-<a href="T_CapyKit_Pbkdf2Algorithm">Pbkdf2Algorithm Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

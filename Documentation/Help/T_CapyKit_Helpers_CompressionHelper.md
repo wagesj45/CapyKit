@@ -6,7 +6,7 @@ A class that contains methods for managing data compression.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -28,19 +28,19 @@ type CompressionHelper = class end
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Helpers_CompressionHelper_Compress">Compress</a></td>
+<td><a href="M_CapyKit_Helpers_CompressionHelper_Compress.md">Compress</a></td>
 <td>Compresses a given object using the <code>gzip</code> algorithm.</td></tr>
 <tr>
-<td><a href="M_CapyKit_Helpers_CompressionHelper_CompressToString">CompressToString</a></td>
+<td><a href="M_CapyKit_Helpers_CompressionHelper_CompressToString.md">CompressToString</a></td>
 <td>Compresses a given object to a string using <code>base64</code> encoding of <code>gzip</code> format.</td></tr>
 <tr>
-<td><a href="M_CapyKit_Helpers_CompressionHelper_Decompress__1">Decompress(T)(Byte[])</a></td>
+<td><a href="M_CapyKit_Helpers_CompressionHelper_Decompress__1.md">Decompress(T)(Byte[])</a></td>
 <td>Decompresses a given compressed <code>gzip</code> byte stream.</td></tr>
 <tr>
-<td><a href="M_CapyKit_Helpers_CompressionHelper_Decompress__1_1">Decompress(T)(String)</a></td>
+<td><a href="M_CapyKit_Helpers_CompressionHelper_Decompress__1_1.md">Decompress(T)(String)</a></td>
 <td>Decompresses a given <code>base64</code> encoded string of <code>gzip</code> format.</td></tr>
 <tr>
-<td><a href="M_CapyKit_Helpers_CompressionHelper_DecompressToString">DecompressToString</a></td>
+<td><a href="M_CapyKit_Helpers_CompressionHelper_DecompressToString.md">DecompressToString</a></td>
 <td>Decompresses the given <code>base64</code> string in <code>gzip</code> format.</td></tr>
 </table>
 
@@ -48,4 +48,4 @@ type CompressionHelper = class end
 
 
 #### Reference
-<a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

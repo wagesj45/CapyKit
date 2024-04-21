@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Topics>
-  <Topic id="849aa079-3d64-4cf1-966f-44af23c73160" visible="True" isDefault="true" isSelected="true" title="Welcome to the [TODO: Add project name]">
+  <Topic id="849aa079-3d64-4cf1-966f-44af23c73160" visible="True" isDefault="true" isSelected="true" title="CapyKit - C# Utilities">
     <HelpKeywords>
       <HelpKeyword index="K" term="Welcome" />
     </HelpKeywords>
   </Topic>
-  <Topic id="7d36447b-0aab-4ce9-b5ed-e60ec5bee103" visible="True" isExpanded="true" title="Version History">
+  <Topic id="7d36447b-0aab-4ce9-b5ed-e60ec5bee103" visible="True" title="Version History">
     <HelpKeywords>
       <HelpKeyword index="K" term="version, history" />
     </HelpKeywords>

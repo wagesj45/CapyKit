@@ -1,4 +1,4 @@
-# Welcome to the [TODO: Add project name]
+# CapyKit - C# Utilities
 
 This is a sample conceptual topic. You can use this as a starting point for adding more conceptual content to your help project.
 
@@ -24,4 +24,4 @@ See the **Conceptual Content** topics in the Sandcastle Help File Builder's help
 
 
 #### Other Resources
-<a href="7d36447b-0aab-4ce9-b5ed-e60ec5bee103">Version History</a>  
+<a href="7d36447b-0aab-4ce9-b5ed-e60ec5bee103.md">Version History</a>  

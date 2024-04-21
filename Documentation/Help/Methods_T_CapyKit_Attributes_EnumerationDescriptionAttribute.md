@@ -35,5 +35,5 @@
 
 
 #### Reference
-<a href="T_CapyKit_Attributes_EnumerationDescriptionAttribute">EnumerationDescriptionAttribute Class</a>  
-<a href="N_CapyKit_Attributes">CapyKit.Attributes Namespace</a>  
+<a href="T_CapyKit_Attributes_EnumerationDescriptionAttribute.md">EnumerationDescriptionAttribute Class</a>  
+<a href="N_CapyKit_Attributes.md">CapyKit.Attributes Namespace</a>  

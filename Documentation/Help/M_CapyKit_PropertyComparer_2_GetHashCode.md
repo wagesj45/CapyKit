@@ -6,7 +6,7 @@ Returns a hash code for the specified object.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -26,7 +26,7 @@ override GetHashCode :
 
 
 #### Parameters
-<dl><dt>  <a href="T_CapyKit_PropertyComparer_2">T</a></dt><dd>The <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a> for which a hash code is to be returned.</dd></dl>
+<dl><dt>  <a href="T_CapyKit_PropertyComparer_2.md">T</a></dt><dd>The <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a> for which a hash code is to be returned.</dd></dl>
 
 #### Return Value
 <a href="https://learn.microsoft.com/dotnet/api/system.int32" target="_blank" rel="noopener noreferrer">Int32</a>  
@@ -47,6 +47,6 @@ A hash code for the specified object.
 
 
 #### Reference
-<a href="T_CapyKit_PropertyComparer_2">PropertyComparer(T, U) Class</a>  
-<a href="Overload_CapyKit_PropertyComparer_2_GetHashCode">GetHashCode Overload</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_PropertyComparer_2.md">PropertyComparer(T, U) Class</a>  
+<a href="Overload_CapyKit_PropertyComparer_2_GetHashCode.md">GetHashCode Overload</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

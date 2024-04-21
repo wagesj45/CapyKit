@@ -6,7 +6,7 @@ Replaces a null or empty string with a specified replacement string.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
+**Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -44,6 +44,6 @@ Extension Methods (C# Programming Guide)</a>.
 
 
 #### Reference
-<a href="T_CapyKit_Extensions_StringExtensions">StringExtensions Class</a>  
-<a href="N_CapyKit_Extensions">CapyKit.Extensions Namespace</a>  
+<a href="T_CapyKit_Extensions_StringExtensions.md">StringExtensions Class</a>  
+<a href="N_CapyKit_Extensions.md">CapyKit.Extensions Namespace</a>  
 <a href="https://learn.microsoft.com/dotnet/api/system.string.isnullorempty" target="_blank" rel="noopener noreferrer">IsNullOrEmpty(String)</a>  

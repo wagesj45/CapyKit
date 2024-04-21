@@ -6,7 +6,7 @@ Gets the value of the enumeration represented by this attribute.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Attributes">CapyKit.Attributes</a>  
+**Namespace:** <a href="N_CapyKit_Attributes.md">CapyKit.Attributes</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -24,11 +24,11 @@ new :
 
 
 #### Parameters
-<dl><dt>  <a href="T_CapyKit_Attributes_EnumerationAttribute_1">T</a></dt><dd>Initializes a new instance of the <a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute(T)</a> class with a specified value.</dd></dl>
+<dl><dt>  <a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">T</a></dt><dd>Initializes a new instance of the <a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute(T)</a> class with a specified value.</dd></dl>
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_Attributes_EnumerationAttribute_1">EnumerationAttribute(T) Class</a>  
-<a href="N_CapyKit_Attributes">CapyKit.Attributes Namespace</a>  
+<a href="T_CapyKit_Attributes_EnumerationAttribute_1.md">EnumerationAttribute(T) Class</a>  
+<a href="N_CapyKit_Attributes.md">CapyKit.Attributes Namespace</a>  

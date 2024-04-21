@@ -6,7 +6,7 @@ Implements the PBKDF2 algorithm for password encryption.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -22,7 +22,7 @@ type Pbkdf2Algorithm =
 ```
 
 <table><tr><td><strong>Inheritance</strong></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  →  Pbkdf2Algorithm</td></tr>
-<tr><td><strong>Implements</strong></td><td><a href="T_CapyKit_IPasswordAlgorithm">IPasswordAlgorithm</a></td></tr>
+<tr><td><strong>Implements</strong></td><td><a href="T_CapyKit_IPasswordAlgorithm.md">IPasswordAlgorithm</a></td></tr>
 </table>
 
 
@@ -30,21 +30,21 @@ type Pbkdf2Algorithm =
 ## Constructors
 <table>
 <tr>
-<td><a href="M_CapyKit_Pbkdf2Algorithm__ctor">Pbkdf2Algorithm</a></td>
+<td><a href="M_CapyKit_Pbkdf2Algorithm__ctor.md">Pbkdf2Algorithm</a></td>
 <td>Initializes a new instance of the Pbkdf2Algorithm class</td></tr>
 </table>
 
 ## Properties
 <table>
 <tr>
-<td><a href="P_CapyKit_Pbkdf2Algorithm_AlgorithmName">AlgorithmName</a></td>
+<td><a href="P_CapyKit_Pbkdf2Algorithm_AlgorithmName.md">AlgorithmName</a></td>
 <td>Gets the name of the algorithm.</td></tr>
 </table>
 
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Pbkdf2Algorithm_Encrypt">Encrypt</a></td>
+<td><a href="M_CapyKit_Pbkdf2Algorithm_Encrypt.md">Encrypt</a></td>
 <td>Encrypts the given password using a PBKDF2 algorithm.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td>
@@ -69,10 +69,10 @@ type Pbkdf2Algorithm =
 ## Fields
 <table>
 <tr>
-<td><a href="F_CapyKit_Pbkdf2Algorithm_ITERATIONS">ITERATIONS</a></td>
+<td><a href="F_CapyKit_Pbkdf2Algorithm_ITERATIONS.md">ITERATIONS</a></td>
 <td>The default number of iterations.</td></tr>
 <tr>
-<td><a href="F_CapyKit_Pbkdf2Algorithm_LENGTH">LENGTH</a></td>
+<td><a href="F_CapyKit_Pbkdf2Algorithm_LENGTH.md">LENGTH</a></td>
 <td>(Immutable) The default length.</td></tr>
 </table>
 
@@ -80,4 +80,4 @@ type Pbkdf2Algorithm =
 
 
 #### Reference
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

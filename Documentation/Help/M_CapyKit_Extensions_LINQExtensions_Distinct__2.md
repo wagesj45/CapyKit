@@ -6,7 +6,7 @@ Enumerates distinct items in this collection as defined by the key *property*.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
+**Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -48,5 +48,5 @@ Extension Methods (C# Programming Guide)</a>.
 
 
 #### Reference
-<a href="T_CapyKit_Extensions_LINQExtensions">LINQExtensions Class</a>  
-<a href="N_CapyKit_Extensions">CapyKit.Extensions Namespace</a>  
+<a href="T_CapyKit_Extensions_LINQExtensions.md">LINQExtensions Class</a>  
+<a href="N_CapyKit_Extensions.md">CapyKit.Extensions Namespace</a>  

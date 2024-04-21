@@ -1,12 +1,12 @@
 # Pool&lt;T&gt;(Int32) Constructor
 
 
-Initializes a new instance of the <a href="T_CapyKit_Pool_1">Pool(T)</a> class with the specified pool size.
+Initializes a new instance of the <a href="T_CapyKit_Pool_1.md">Pool(T)</a> class with the specified pool size.
 
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -30,6 +30,6 @@ new :
 
 
 #### Reference
-<a href="T_CapyKit_Pool_1">Pool(T) Class</a>  
-<a href="Overload_CapyKit_Pool_1__ctor">Pool(T) Overload</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pool_1.md">Pool(T) Class</a>  
+<a href="Overload_CapyKit_Pool_1__ctor.md">Pool(T) Overload</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

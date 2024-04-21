@@ -6,7 +6,7 @@ Encrypts the given password using a PBKDF2 algorithm.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -38,12 +38,12 @@ override Encrypt :
 A byte array with the hashed *password*.
 
 #### Implements
-<a href="M_CapyKit_IPasswordAlgorithm_Encrypt">IPasswordAlgorithm.Encrypt(String, Object[])</a>  
+<a href="M_CapyKit_IPasswordAlgorithm_Encrypt.md">IPasswordAlgorithm.Encrypt(String, Object[])</a>  
 
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_Pbkdf2Algorithm">Pbkdf2Algorithm Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

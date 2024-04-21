@@ -6,7 +6,7 @@ Gets the first available item from the pool and sets its lock.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -21,12 +21,12 @@ member GetAvailableItem : unit -> PoolItem<'T>
 
 
 #### Return Value
-<a href="T_CapyKit_PoolItem_1">PoolItem</a>(<a href="T_CapyKit_Pool_1">T</a>)  
+<a href="T_CapyKit_PoolItem_1.md">PoolItem</a>(<a href="T_CapyKit_Pool_1.md">T</a>)  
 The first available item from the pool.
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_Pool_1">Pool(T) Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_Pool_1.md">Pool(T) Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

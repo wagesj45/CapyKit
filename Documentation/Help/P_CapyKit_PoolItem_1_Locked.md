@@ -6,7 +6,7 @@ Gets a value indicating whether this object is locked or not.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -28,5 +28,5 @@ A value indicating whether this object is locked or not.
 
 
 #### Reference
-<a href="T_CapyKit_PoolItem_1">PoolItem(T) Class</a>  
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="T_CapyKit_PoolItem_1.md">PoolItem(T) Class</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

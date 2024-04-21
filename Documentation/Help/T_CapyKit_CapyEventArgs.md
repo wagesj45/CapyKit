@@ -6,7 +6,7 @@ The CapyEventArgs class represents an event argument instance with event level, 
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -29,20 +29,20 @@ type CapyEventArgs =
 ## Constructors
 <table>
 <tr>
-<td><a href="M_CapyKit_CapyEventArgs__ctor">CapyEventArgs</a></td>
+<td><a href="M_CapyKit_CapyEventArgs__ctor.md">CapyEventArgs</a></td>
 <td>Initializes a new instance of the CapyEventArgs class with the specified event level, message, and method name.</td></tr>
 </table>
 
 ## Properties
 <table>
 <tr>
-<td><a href="P_CapyKit_CapyEventArgs_Level">Level</a></td>
+<td><a href="P_CapyKit_CapyEventArgs_Level.md">Level</a></td>
 <td>Gets the severity level of the event.</td></tr>
 <tr>
-<td><a href="P_CapyKit_CapyEventArgs_Message">Message</a></td>
+<td><a href="P_CapyKit_CapyEventArgs_Message.md">Message</a></td>
 <td>Gets the message describing the reason for the event.</td></tr>
 <tr>
-<td><a href="P_CapyKit_CapyEventArgs_MethodName">MethodName</a></td>
+<td><a href="P_CapyKit_CapyEventArgs_MethodName.md">MethodName</a></td>
 <td>Gets the name of the method where the event was raised.</td></tr>
 </table>
 
@@ -72,4 +72,4 @@ type CapyEventArgs =
 
 
 #### Reference
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  

@@ -6,7 +6,7 @@ Represents a password with its hash, salt and algorithm used for encryption.
 
 
 ## Definition
-**Namespace:** <a href="N_CapyKit">CapyKit</a>  
+**Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
 **Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
@@ -23,19 +23,29 @@ type Password = class end
 
 
 
+## Constructors
+<table>
+<tr>
+<td><a href="M_CapyKit_Password__cctor.md">Password</a></td>
+<td> </td></tr>
+<tr>
+<td><a href="M_CapyKit_Password__ctor.md">Password</a></td>
+<td>Constructor.</td></tr>
+</table>
+
 ## Properties
 <table>
 <tr>
-<td><a href="P_CapyKit_Password_Algorithm">Algorithm</a></td>
+<td><a href="P_CapyKit_Password_Algorithm.md">Algorithm</a></td>
 <td>Gets or sets the algorithm used for password encryption.</td></tr>
 <tr>
-<td><a href="P_CapyKit_Password_Hash">Hash</a></td>
+<td><a href="P_CapyKit_Password_Hash.md">Hash</a></td>
 <td>Gets or sets the hash of the password.</td></tr>
 <tr>
-<td><a href="P_CapyKit_Password_Pbkdf2Algorithm">Pbkdf2Algorithm</a></td>
+<td><a href="P_CapyKit_Password_Pbkdf2Algorithm.md">Pbkdf2Algorithm</a></td>
 <td> </td></tr>
 <tr>
-<td><a href="P_CapyKit_Password_Salt">Salt</a></td>
+<td><a href="P_CapyKit_Password_Salt.md">Salt</a></td>
 <td>Gets or sets the salt used for encryption.</td></tr>
 </table>
 
@@ -57,12 +67,19 @@ type Password = class end
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td>
 <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_Password_ToString">ToString</a></td>
+<td><a href="M_CapyKit_Password_ToString.md">ToString</a></td>
 <td>Returns a string that represents the current object.<br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object.ToString()</a>)</td></tr>
+</table>
+
+## Fields
+<table>
+<tr>
+<td><a href="F_CapyKit_Password_algorithm.md">algorithm</a></td>
+<td> </td></tr>
 </table>
 
 ## See Also
 
 
 #### Reference
-<a href="N_CapyKit">CapyKit Namespace</a>  
+<a href="N_CapyKit.md">CapyKit Namespace</a>  
