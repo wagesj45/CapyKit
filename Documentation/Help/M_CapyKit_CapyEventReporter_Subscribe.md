@@ -7,7 +7,7 @@ Subscribes the specified event handler to the event with the given subscription 
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -15,23 +15,6 @@ public static void Subscribe(
 	CapyEventHandler callback,
 	EventLevel subscriptionLevel,
 	string origin = null
-)
-```
-**VB**
-``` VB
-Public Shared Sub Subscribe ( 
-	callback As CapyEventHandler,
-	subscriptionLevel As EventLevel,
-	Optional origin As String = Nothing
-)
-```
-**C++**
-``` C++
-public:
-static void Subscribe(
-	CapyEventHandler^ callback, 
-	EventLevel subscriptionLevel, 
-	String^ origin = nullptr
 )
 ```
 **F#**

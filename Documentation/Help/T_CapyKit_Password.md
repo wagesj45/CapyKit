@@ -7,19 +7,11 @@ Represents a password with its hash, salt and algorithm used for encryption.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
 public class Password
-```
-**VB**
-``` VB
-Public Class Password
-```
-**C++**
-``` C++
-public ref class Password
 ```
 **F#**
 ``` F#
@@ -39,6 +31,9 @@ type Password = class end
 <tr>
 <td><a href="P_CapyKit_Password_Hash">Hash</a></td>
 <td>Gets or sets the hash of the password.</td></tr>
+<tr>
+<td><a href="P_CapyKit_Password_Pbkdf2Algorithm">Pbkdf2Algorithm</a></td>
+<td> </td></tr>
 <tr>
 <td><a href="P_CapyKit_Password_Salt">Salt</a></td>
 <td>Gets or sets the salt used for encryption.</td></tr>

@@ -7,19 +7,11 @@ The CapyEventReporter class is responsible for managing event subscriptions and 
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
 public static class CapyEventReporter
-```
-**VB**
-``` VB
-Public NotInheritable Class CapyEventReporter
-```
-**C++**
-``` C++
-public ref class CapyEventReporter abstract sealed
 ```
 **F#**
 ``` F#

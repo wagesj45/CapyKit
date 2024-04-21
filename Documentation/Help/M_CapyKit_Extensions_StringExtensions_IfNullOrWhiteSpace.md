@@ -7,30 +7,13 @@ Replaces a null or whitespace string with a specified replacement string.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
 public static string IfNullOrWhiteSpace(
 	this string value,
 	string replacement
-)
-```
-**VB**
-``` VB
-<ExtensionAttribute>
-Public Shared Function IfNullOrWhiteSpace ( 
-	value As String,
-	replacement As String
-) As String
-```
-**C++**
-``` C++
-public:
-[ExtensionAttribute]
-static String^ IfNullOrWhiteSpace(
-	String^ value, 
-	String^ replacement
 )
 ```
 **F#**

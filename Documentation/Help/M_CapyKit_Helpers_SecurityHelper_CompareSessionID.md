@@ -7,28 +7,13 @@ Compares two session identifiers.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
 public static bool CompareSessionID(
 	string first,
 	string second
-)
-```
-**VB**
-``` VB
-Public Shared Function CompareSessionID ( 
-	first As String,
-	second As String
-) As Boolean
-```
-**C++**
-``` C++
-public:
-static bool CompareSessionID(
-	String^ first, 
-	String^ second
 )
 ```
 **F#**

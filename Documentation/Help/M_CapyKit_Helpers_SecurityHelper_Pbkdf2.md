@@ -1,55 +1,42 @@
-# Pbkdf2 Method
+# Pbkdf2(String) Method
 
 
-\[Missing &lt;summary&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.Pbkdf2(System.String,System.Byte[]@)"\]
+Generates a new <a href="T_CapyKit_Password">Password</a> object using the PBKDF2 algorithm with the provided *password*. This overload of the method generates a random salt value for added security.
 
 
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
-public static string Pbkdf2(
-	string password,
-	out byte[] salt
-)
-```
-**VB**
-``` VB
-Public Shared Function Pbkdf2 ( 
-	password As String,
-	<OutAttribute> ByRef salt As Byte()
-) As String
-```
-**C++**
-``` C++
-public:
-static String^ Pbkdf2(
-	String^ password, 
-	[OutAttribute] array<unsigned char>^% salt
+public static Password Pbkdf2(
+	string password
 )
 ```
 **F#**
 ``` F#
 static member Pbkdf2 : 
-        password : string * 
-        salt : byte[] byref -> string 
+        password : string -> Password 
 ```
 
 
 
 #### Parameters
-<dl><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>\[Missing &lt;param name="password"/&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.Pbkdf2(System.String,System.Byte[]@)"\]</dd><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.byte" target="_blank" rel="noopener noreferrer">Byte</a>[]</dt><dd>\[Missing &lt;param name="salt"/&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.Pbkdf2(System.String,System.Byte[]@)"\]</dd></dl>
+<dl><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The clear text password to be hashed.</dd></dl>
 
 #### Return Value
-<a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  
-\[Missing &lt;returns&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.Pbkdf2(System.String,System.Byte[]@)"\]
+<a href="T_CapyKit_Password">Password</a>  
+A new <a href="T_CapyKit_Password">Password</a> object containing the hashed password and a randomly generated salt.
+
+## Remarks
+This method uses the PBKDF2 (Password-Based Key Derivation Function 2) algorithm to generate a new password hash. The algorithm iteratively applies a pseudorandom function to the password and salt, which increases the security of the resulting hash. In this overload, a random salt value is generated using GetRandomBytes(Int32) method.
 
 ## See Also
 
 
 #### Reference
 <a href="T_CapyKit_Helpers_SecurityHelper">SecurityHelper Class</a>  
+<a href="Overload_CapyKit_Helpers_SecurityHelper_Pbkdf2">Pbkdf2 Overload</a>  
 <a href="N_CapyKit_Helpers">CapyKit.Helpers Namespace</a>  

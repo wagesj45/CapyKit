@@ -7,7 +7,7 @@ Compares the given plaintext password with an encrypted value using PBKDF2 algor
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -15,22 +15,6 @@ bool Compare(
 	string password,
 	byte[] encryptedValue,
 	params Object[] args
-)
-```
-**VB**
-``` VB
-Function Compare ( 
-	password As String,
-	encryptedValue As Byte(),
-	ParamArray args As Object()
-) As Boolean
-```
-**C++**
-``` C++
-bool Compare(
-	String^ password, 
-	array<unsigned char>^ encryptedValue, 
-	... array<Object^>^ args
 )
 ```
 **F#**

@@ -16,7 +16,7 @@ namespace CapyKit
     {
         #region Members
 
-        //
+        private static Lazy<Pbkdf2Algorithm> algorithm = new Lazy<Pbkdf2Algorithm>(() => new Pbkdf2Algorithm());
 
         #endregion
 
@@ -36,6 +36,14 @@ namespace CapyKit
         /// Gets or sets the algorithm used for password encryption.
         /// </summary>
         public IPasswordAlgorithm Algorithm { get; private set; }
+
+        public static Pbkdf2Algorithm Pbkdf2Algorithm
+        {
+            get
+            {
+                return algorithm.Value;
+            }
+        }
 
         #endregion
 

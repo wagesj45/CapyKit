@@ -7,7 +7,7 @@ Deserializes an object to a given *T* type.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -15,20 +15,6 @@ public static T Deserialize<T>(
 	Stream stream
 )
 
-```
-**VB**
-``` VB
-Public Shared Function Deserialize(Of T) ( 
-	stream As Stream
-) As T
-```
-**C++**
-``` C++
-public:
-generic<typename T>
-static T Deserialize(
-	Stream^ stream
-)
 ```
 **F#**
 ``` F#

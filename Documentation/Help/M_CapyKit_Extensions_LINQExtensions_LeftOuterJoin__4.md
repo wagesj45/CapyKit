@@ -7,7 +7,7 @@ An IEnumable&lt;T&gt; extension method that left outer join.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -20,32 +20,6 @@ public static IEnumerable<R> LeftOuterJoin<T, U, TKey, R>(
 	Func<T, U> defaultGenerator = null
 )
 
-```
-**VB**
-``` VB
-<ExtensionAttribute>
-Public Shared Function LeftOuterJoin(Of T, U, TKey, R) ( 
-	source As IEnumerable(Of T),
-	inner As IEnumerable(Of U),
-	outerSelector As Func(Of T, TKey),
-	innerSelector As Func(Of U, TKey),
-	resultSelector As Func(Of T, IEnumerable(Of U), R),
-	Optional defaultGenerator As Func(Of T, U) = Nothing
-) As IEnumerable(Of R)
-```
-**C++**
-``` C++
-public:
-[ExtensionAttribute]
-generic<typename T, typename U, typename TKey, typename R>
-static IEnumerable<R>^ LeftOuterJoin(
-	IEnumerable<T>^ source, 
-	IEnumerable<U>^ inner, 
-	Func<T, TKey>^ outerSelector, 
-	Func<U, TKey>^ innerSelector, 
-	Func<T, IEnumerable<U>^, R>^ resultSelector, 
-	Func<T, U>^ defaultGenerator = nullptr
-)
 ```
 **F#**
 ``` F#

@@ -20,3 +20,10 @@
 <td><a href="T_CapyKit_Helpers_SerializationHelper">SerializationHelper</a></td>
 <td> </td></tr>
 </table>
+
+## Enumerations
+<table>
+<tr>
+<td><a href="T_CapyKit_Helpers_ValidCharacterCollection">ValidCharacterCollection</a></td>
+<td>An enumeration that defines the types of characters that can be included in a random string.</td></tr>
+</table>

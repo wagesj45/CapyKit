@@ -7,7 +7,7 @@ A *T* extension method that parses a string into an enumeration.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -18,27 +18,6 @@ public static T Parse<T>(
 )
 where T : Enum
 
-```
-**VB**
-``` VB
-<ExtensionAttribute>
-Public Shared Function Parse(Of T As Enum) ( 
-	enumeration As T,
-	value As String,
-	ignoreCase As Boolean
-) As T
-```
-**C++**
-``` C++
-public:
-[ExtensionAttribute]
-generic<typename T>
-where T : Enum
-static T Parse(
-	T enumeration, 
-	String^ value, 
-	bool ignoreCase
-)
 ```
 **F#**
 ``` F#

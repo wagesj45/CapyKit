@@ -1,6 +1,9 @@
-﻿using System;
+﻿using CapyKit.Attributes;
+using CapyKit.Extensions;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection.Metadata.Ecma335;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,23 +15,20 @@ namespace CapyKit.Helpers
     {
         #region Members
 
-        private int keySize = 32;
-        private int saltSize = 32;
-
-        /// <summary> The salt used when creating a hash using the <a href="https://en.wikipedia.org/wiki/SHA-2">SHA256</a> algorithm. </summary>
-        private const string SALT = "D4260471-5DBA-4732-B960-6E2E438F8872";
+        /// <summary> Default size of the generated salt. </summary>
+        private const int saltSize = 32;
 
         /// <summary> A string of all the lower case characters. </summary>
-        private const string LOWER_CASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
+        internal const string LOWER_CASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
 
         /// <summary> A string of all the upper case characters. </summary>
-        private const string UPPER_CASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        internal const string UPPER_CASE_CHARACTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         /// <summary> A string of all the numeric characters. </summary>
-        private const string NUMBER_CHARACTERS = "0123456789";
+        internal const string NUMBER_CHARACTERS = "0123456789";
 
         /// <summary> A string of the most common non-alphanumeric characters. </summary>
-        private const string SPECIAL_CHARACTERS = "!@#$%&?+-_";
+        internal const string SPECIAL_CHARACTERS = "!@#$%&?+-_";
 
         #endregion Members
 
@@ -57,51 +57,56 @@ namespace CapyKit.Helpers
         }
 
         /// <summary>
-        /// Produces a <a href="https://en.wikipedia.org/wiki/SHA-2">SHA256</a> hash from a given
-        /// <paramref name="value"/>.
+        /// Generates a new <see cref="Password"/> object using the PBKDF2 algorithm with the provided <paramref name="password"/>
+        /// and <paramref name="salt"/>.
         /// </summary>
-        /// <param name="value"> The value. </param>
+        /// <remarks>
+        /// This method uses the PBKDF2 (Password-Based Key Derivation Function 2) algorithm to generate
+        /// a new password hash. The algorithm iteratively applies a pseudorandom function to the
+        /// password and salt, which increases the security of the resulting hash.
+        /// </remarks>
+        /// <param name="password"> The clear text password to be hashed. </param>
+        /// <param name="salt">
+        ///     A random value used to add an additional layer of security to the generated hash.
+        /// </param>
         /// <returns>
-        /// A byte array equal to the SHA256 hash of <paramref name="value"/> or an empty array if it
-        /// fails.
+        /// A new <see cref="Password"/> object containing the hashed password and salt.
         /// </returns>
-        public static byte[] SHA256Hash(string value)
+        public static Password Pbkdf2(string password, byte[] salt)
         {
-            try
-            {
-                using (var hash = new SHA256Managed())
-                {
-                    var bytes = Encoding.Unicode.GetBytes(value + SALT);
-                    var encrypted = hash.ComputeHash(bytes);
-                    return encrypted;
-                }
-            }
-            catch (Exception ex)
-            {
-                CapyEventReporter.EmitEvent(EventLevel.Error, "Could not hash the given value {0}.", args: new[] { value });
-            }
+            var pwd = new Password(password, salt, Password.Pbkdf2Algorithm);
 
-            return new byte[0];
+            return pwd;
         }
 
-        public static string Pbkdf2(string password, out byte[] salt)
+        /// <summary>
+        /// Generates a new <see cref="Password"/> object using the PBKDF2 algorithm with the provided <paramref name="password"/>.
+        /// This overload of the method generates a random salt value for added security.
+        /// </summary>
+        /// <remarks>
+        /// This method uses the PBKDF2 (Password-Based Key Derivation Function 2) algorithm to generate
+        /// a new password hash. The algorithm iteratively applies a pseudorandom function to the
+        /// password and salt, which increases the security of the resulting hash. In this overload,
+        /// a random salt value is generated using <see cref="SecurityHelper.GetRandomBytes(int)"/> method.
+        /// </remarks>
+        /// <param name="password"> The clear text password to be hashed. </param>
+        /// <returns>
+        /// A new <see cref="Password"/> object containing the hashed password and a randomly generated salt.
+        /// </returns>
+        public static Password Pbkdf2(string password)
         {
-            throw new NotImplementedException();
+            var salt = SecurityHelper.GetRandomBytes(saltSize);
+            var pwd = new Password(password, salt, Password.Pbkdf2Algorithm);
+
+            return pwd;
         }
 
         /// <summary> Gets a cryptographically strong random password. </summary>
         /// <param name="length"> The length of the password to generate. </param>
         /// <returns> The password. </returns>
-        public static string GetRandomPassword(int length)
+        public static string GetRandomPassword(int length, params ValidCharacterCollection[] validCharacters)
         {
-            return GetRandomString(length);
-        }
-
-        /// <summary> Gets a calendar key that is <c>32</c> characters long. </summary>
-        /// <returns> The calendar key. </returns>
-        public static string GetCalendarKey()
-        {
-            return GetRandomString(32);
+            return GetRandomString(length, validCharacters);
         }
 
         /// <summary> Compares two session identifiers. </summary>
@@ -119,25 +124,93 @@ namespace CapyKit.Helpers
             return CompareStrings(first.Trim(), second.Trim());
         }
 
+        /// <summary>
+        /// A convenience method to generate a random string of the specified length using all character sets.
+        /// </summary>
+        /// <param name="length"> The desired length of the generated random string.</param>
+        /// <seealso cref="ValidCharacterCollection"/>
+        /// <seealso cref="GetRandomString(int, ValidCharacterCollection[])"/>
+        public static string GetRandomString(int length)
+        {
+            return GetRandomString(length,
+                ValidCharacterCollection.Lowercase,
+                ValidCharacterCollection.Uppercase,
+                ValidCharacterCollection.Numbers,
+                ValidCharacterCollection.Special);
+        }
+
         /// <summary> Gets a cryptographically strong random string using the character values found in <see cref="VALID_CHARACTERS"/>. </summary>
         /// <param name="length"> The length of the string to create. </param>
         /// <returns> The random string. </returns>
-        private static string GetRandomString(int length)
+        public static string GetRandomString(int length, params ValidCharacterCollection[] validChars)
         {
-            throw new NotImplementedException();
-            //var buffer = new StringBuilder();
-            //while (buffer.Length < length)
-            //{
-            //    var oneByte = new byte[1];
-            //    RandomNumberGenerator.GetBytes(oneByte);
-            //    var character = (char)oneByte[0];
-            //    if (VALID_CHARACTERS.Contains(character))
-            //    {
-            //        buffer.Append(character);
-            //    }
-            //}
+            var buffer = new StringBuilder(length);
+            var randomNumberBuffer = new byte[length * 3]; // Overprovision the buffer so we can discard a small percentage.
+            var validCharacters = GetValidCharacterComposition(validChars);
+            var validByteUpperLimit = (256 / validCharacters.Length) * validCharacters.Length - 1; // Maintains equal distribution of valid characters.
 
-            //return buffer.ToString();
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                while (buffer.Length < length)
+                {
+                    rng.GetBytes(randomNumberBuffer);
+                    foreach (byte b in randomNumberBuffer)
+                    {
+                        if (b <= validByteUpperLimit)
+                        {
+                            int index = b % validCharacters.Length;
+                            buffer.Append(validCharacters[index]);
+                            if (buffer.Length == length)
+                            {
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+
+            return buffer.ToString();
+        }
+
+        /// <summary> Generates a new byte array of the specified length with random values. </summary>
+        /// <param name="length"> The desired length of the generated byte array. </param>
+        /// <returns> A new byte array of the specified length filled with random values. </returns>
+        private static byte[] GetRandomBytes(int length)
+        {
+            var buffer = new byte[length];
+            using (var rng = RandomNumberGenerator.Create())
+            {
+                rng.GetBytes(buffer);
+            }
+
+            return buffer;
+        }
+
+        private static string GetValidCharacterComposition(params ValidCharacterCollection[] validCharacters)
+        {
+            var composition = new StringBuilder();
+            foreach (var c in validCharacters)
+            {
+                switch (c)
+                {
+                    case ValidCharacterCollection.Lowercase:
+                        composition.Append(LOWER_CASE_CHARACTERS);
+                        break;
+                    case ValidCharacterCollection.Uppercase:
+                        composition.Append(LOWER_CASE_CHARACTERS);
+                        break;
+                    case ValidCharacterCollection.Numbers:
+                        composition.Append(LOWER_CASE_CHARACTERS);
+                        break;
+                    case ValidCharacterCollection.Special:
+                        composition.Append(LOWER_CASE_CHARACTERS);
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+            return composition.ToString();
         }
 
         /// <summary> Compare two strings as case sensative. </summary>
@@ -157,5 +230,32 @@ namespace CapyKit.Helpers
         }
 
         #endregion Methods
+    }
+
+    /// <summary>
+    /// An enumeration that defines the types of characters that can be included in a random string.
+    /// </summary>
+    public enum ValidCharacterCollection
+    {
+        /// <summary>
+        /// Indicates that lower case characters should be included in the random string.
+        /// </summary>
+        [EnumerationDescriptionAttribute(SecurityHelper.LOWER_CASE_CHARACTERS)]
+        Lowercase,
+        /// <summary>
+        /// Indicates that upper case characters should be included in the random string.
+        /// </summary>
+        [EnumerationDescriptionAttribute(SecurityHelper.UPPER_CASE_CHARACTERS)]
+        Uppercase,
+        /// <summary>
+        /// Indicates that numeric characters should be included in the random string.
+        /// </summary>
+        [EnumerationDescriptionAttribute(SecurityHelper.NUMBER_CHARACTERS)]
+        Numbers,
+        /// <summary>
+        /// Indicates that special characters should be included in the random string.
+        /// </summary>
+        [EnumerationDescriptionAttribute(SecurityHelper.SPECIAL_CHARACTERS)]
+        Special,
     }
 }

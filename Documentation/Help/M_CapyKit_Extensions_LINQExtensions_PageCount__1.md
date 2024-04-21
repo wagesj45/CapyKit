@@ -7,7 +7,7 @@ The number of pages of *pageSize* size in the given collection.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -16,24 +16,6 @@ public static int PageCount<T>(
 	int pageSize
 )
 
-```
-**VB**
-``` VB
-<ExtensionAttribute>
-Public Shared Function PageCount(Of T) ( 
-	source As IEnumerable(Of T),
-	pageSize As Integer
-) As Integer
-```
-**C++**
-``` C++
-public:
-[ExtensionAttribute]
-generic<typename T>
-static int PageCount(
-	IEnumerable<T>^ source, 
-	int pageSize
-)
 ```
 **F#**
 ``` F#

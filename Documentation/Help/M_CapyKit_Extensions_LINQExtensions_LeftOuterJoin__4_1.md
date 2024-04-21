@@ -7,7 +7,7 @@ An IQueryable&lt;T&gt; extension method that left outer join.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -20,32 +20,6 @@ public static IQueryable<R> LeftOuterJoin<T, U, TKey, R>(
 	Func<T, U> defaultGenerator = null
 )
 
-```
-**VB**
-``` VB
-<ExtensionAttribute>
-Public Shared Function LeftOuterJoin(Of T, U, TKey, R) ( 
-	source As IQueryable(Of T),
-	inner As IQueryable(Of U),
-	outerSelector As Expression(Of Func(Of T, TKey)),
-	innerSelector As Expression(Of Func(Of U, TKey)),
-	resultSelector As Func(Of T, IEnumerable(Of U), R),
-	Optional defaultGenerator As Func(Of T, U) = Nothing
-) As IQueryable(Of R)
-```
-**C++**
-``` C++
-public:
-[ExtensionAttribute]
-generic<typename T, typename U, typename TKey, typename R>
-static IQueryable<R>^ LeftOuterJoin(
-	IQueryable<T>^ source, 
-	IQueryable<U>^ inner, 
-	Expression<Func<T, TKey>^>^ outerSelector, 
-	Expression<Func<U, TKey>^>^ innerSelector, 
-	Func<T, IEnumerable<U>^, R>^ resultSelector, 
-	Func<T, U>^ defaultGenerator = nullptr
-)
 ```
 **F#**
 ``` F#

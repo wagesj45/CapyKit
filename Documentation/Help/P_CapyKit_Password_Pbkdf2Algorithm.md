@@ -1,7 +1,7 @@
-# Algorithm Property
+# Pbkdf2Algorithm Property
 
 
-Gets or sets the algorithm used for password encryption.
+\[Missing &lt;summary&gt; documentation for "P:CapyKit.Password.Pbkdf2Algorithm"\]
 
 
 
@@ -11,17 +11,17 @@ Gets or sets the algorithm used for password encryption.
 
 **C#**
 ``` C#
-public IPasswordAlgorithm Algorithm { get; }
+public static Pbkdf2Algorithm Pbkdf2Algorithm { get; }
 ```
 **F#**
 ``` F#
-member Algorithm : IPasswordAlgorithm with get
+static member Pbkdf2Algorithm : Pbkdf2Algorithm with get
 ```
 
 
 
 #### Property Value
-<a href="T_CapyKit_IPasswordAlgorithm">IPasswordAlgorithm</a>
+<a href="T_CapyKit_Pbkdf2Algorithm">Pbkdf2Algorithm</a>
 
 ## See Also
 

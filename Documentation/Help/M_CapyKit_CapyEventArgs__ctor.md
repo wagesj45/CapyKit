@@ -7,7 +7,7 @@ Initializes a new instance of the CapyEventArgs class with the specified event l
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
@@ -15,23 +15,6 @@ public CapyEventArgs(
 	EventLevel level,
 	string message,
 	string method = null
-)
-```
-**VB**
-``` VB
-Public Sub New ( 
-	level As EventLevel,
-	message As String,
-	Optional method As String = Nothing
-)
-```
-**C++**
-``` C++
-public:
-CapyEventArgs(
-	EventLevel level, 
-	String^ message, 
-	String^ method = nullptr
 )
 ```
 **F#**

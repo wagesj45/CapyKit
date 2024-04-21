@@ -31,7 +31,7 @@
       <Argument Key="maxVersionParts" Value="" xmlns="" />
     </TransformComponentArguments>
     <HelpFileFormat>Markdown</HelpFileFormat>
-    <SyntaxFilters>Standard</SyntaxFilters>
+    <SyntaxFilters>C#, F#</SyntaxFilters>
     <PresentationStyle>Markdown</PresentationStyle>
     <CleanIntermediates>True</CleanIntermediates>
     <KeepLogFile>True</KeepLogFile>

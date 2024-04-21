@@ -7,22 +7,12 @@ A object comparer that can accept a lambda expression to compare properties.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+6cdd805be49c3b769a116584ea6904955ecd820d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
 
 **C#**
 ``` C#
 public class PropertyComparer<T, U> : IEqualityComparer<T>
 
-```
-**VB**
-``` VB
-Public Class PropertyComparer(Of T, U)
-	Implements IEqualityComparer(Of T)
-```
-**C++**
-``` C++
-generic<typename T, typename U>
-public ref class PropertyComparer : IEqualityComparer<T>
 ```
 **F#**
 ``` F#
