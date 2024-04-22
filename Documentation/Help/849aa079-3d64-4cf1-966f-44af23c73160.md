@@ -24,4 +24,4 @@ See the **Conceptual Content** topics in the Sandcastle Help File Builder's help
 
 
 #### Other Resources
-<a href="7d36447b-0aab-4ce9-b5ed-e60ec5bee103.md">Version History</a>  
+[7d36447b-0aab-4ce9-b5ed-e60ec5bee103]  

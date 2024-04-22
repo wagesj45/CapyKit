@@ -7,7 +7,7 @@ Get a page of items from a collection, skipping *pageNumber* pages of *pageSize*
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0+735d7c4c91a8ae04c2d8cae4ce85ddf4909e5b7d
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
 
 **C#**
 ``` C#

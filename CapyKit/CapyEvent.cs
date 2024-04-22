@@ -78,8 +78,7 @@ namespace CapyKit
         /// <summary> Emits an event with the given severity level, message, and method name. </summary>
         /// <remarks>
         /// In order to allow for efficient calling member access via <see cref="CallerMemberNameAttribute"/>
-        /// ,
-        ///  it is suggested that <paramref name="args"/> is defined explicitly for formatted messages.
+        /// , it is suggested that <paramref name="args"/> is defined explicitly for formatted messages.
         /// </remarks>
         /// <param name="eventLevel"> The severity level of the event. </param>
         /// <param name="message">
@@ -93,8 +92,9 @@ namespace CapyKit
         ///     A variable-length parameters list containing arguments for formatting the message.
         /// </param>
         /// <example>
-        /// CapyEventReporter.EmitEvent(EventLevel.Error, "Could not find the description for {0}.",
-        /// args: new[] { enumeration });
+        /// <code>
+        /// CapyEventReporter.EmitEvent(EventLevel.Error, "Could not find the description for {0}.", args: new[] { enumeration });
+        /// </code>
         /// </example>
         /// <seealso cref="CallerMemberNameAttribute"/>
         internal static void EmitEvent(EventLevel eventLevel, string message, [CallerMemberName] string method = null, params object[] args)

@@ -19,6 +19,9 @@
 <tr>
 <td><a href="T_CapyKit_Helpers_SerializationHelper.md">SerializationHelper</a></td>
 <td> </td></tr>
+<tr>
+<td><a href="T_CapyKit_Helpers_SettingsHelper.md">SettingsHelper</a></td>
+<td>Static class containing helper methods for retrieving and setting application settings.</td></tr>
 </table>
 
 ## Enumerations
