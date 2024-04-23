@@ -8,11 +8,14 @@
 ## Classes
 <table>
 <tr>
+<td><a href="T_CapyKit_Helpers_CalculationHelper.md">CalculationHelper</a></td>
+<td>Static class providing helper methods for various calculations.</td></tr>
+<tr>
 <td><a href="T_CapyKit_Helpers_CompressionHelper.md">CompressionHelper</a></td>
 <td>A class that contains methods for managing data compression.</td></tr>
 <tr>
 <td><a href="T_CapyKit_Helpers_LanguageHelper.md">LanguageHelper</a></td>
-<td> </td></tr>
+<td>Helper class for handling text transformations.</td></tr>
 <tr>
 <td><a href="T_CapyKit_Helpers_SecurityHelper.md">SecurityHelper</a></td>
 <td>A class that contains methods for managing secure data processing and cryptography.</td></tr>

@@ -12,6 +12,9 @@
 <td><a href="N_CapyKit_Attributes.md">CapyKit.Attributes</a></td>
 <td /></tr>
 <tr>
+<td><a href="N_CapyKit_Enumerations.md">CapyKit.Enumerations</a></td>
+<td /></tr>
+<tr>
 <td><a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a></td>
 <td /></tr>
 <tr>

@@ -7,11 +7,18 @@ using System.Threading.Tasks;
 
 namespace CapyKit.Helpers
 {
+    /// <summary>
+    /// Helper class for handling text transformations.
+    /// </summary>
     public class LanguageHelper
     {
         #region Methods
-        
+
         /// <summary> Converts camel case text to human readable text. </summary>
+        /// <remarks>
+        /// Camel case is a naming convention for identifiers in which the first letter of each word is
+        /// capitalized.
+        /// </remarks>
         /// <param name="value"> The value. </param>
         /// <returns> A string in human readable format. </returns>
         public static string CamelCaseToHumanReadable(string value)

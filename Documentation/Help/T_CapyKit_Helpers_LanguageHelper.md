@@ -1,7 +1,7 @@
 # LanguageHelper Class
 
 
-\[Missing &lt;summary&gt; documentation for "T:CapyKit.Helpers.LanguageHelper"\]
+Helper class for handling text transformations.
 
 
 

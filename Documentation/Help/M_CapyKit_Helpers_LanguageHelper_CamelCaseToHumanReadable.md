@@ -30,6 +30,9 @@ static member CamelCaseToHumanReadable :
 <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  
 A string in human readable format.
 
+## Remarks
+Camel case is a naming convention for identifiers in which the first letter of each word is capitalized.
+
 ## See Also
 
 
