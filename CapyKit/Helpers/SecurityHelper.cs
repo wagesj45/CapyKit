@@ -15,8 +15,8 @@ namespace CapyKit.Helpers
     {
         #region Members
 
-        /// <summary> Default size of the generated salt. </summary>
-        private const int saltSize = 32;
+        /// <summary> Default size to use when generating a new salt. </summary>
+        private const int SALT_SIZE = 32;
 
         /// <summary> A string of all the lower case characters. </summary>
         internal const string LOWER_CASE_CHARACTERS = "abcdefghijklmnopqrstuvwxyz";
@@ -35,25 +35,131 @@ namespace CapyKit.Helpers
         #region Methods
 
         /// <summary>
-        /// Compares an unencrypted <paramref name="providedPassword"/> with a stored, encrypted
-        /// <paramref name="existingPassword"/>.
+        /// Compares an unencrypted <paramref name="password"/> with a stored, encrypted <paramref name="existingPassword"/>.
+        /// This method uses the specified password algorithm type <typeparamref name="T"/> to retrieve the hashed version
+        /// of the <paramref name="password"/> and then compares it with the <paramref name="existingPassword"/>.
         /// </summary>
-        /// <param name="providedPassword"> The provided password, unencrypted. </param>
-        /// <param name="existingPassword"> The existing, encrypted password. </param>
+        /// <typeparam name="T">The type of the password hashing algorithm.</typeparam>
+        /// <param name="existingPassword">The existing, encrypted password.</param>
+        /// <param name="password">The unencrypted password to be compared.</param>
+        /// <param name="salt">The salt value used in password hashing.</param>
+        /// <param name="args">Additional arguments required for constructing the password algorithm instance.</param>
         /// <returns>
         /// <see langword="true"/> if hash comparison succeeds, <see langword="false"/> if it fails.
         /// </returns>
-        public static bool CompareHashedPassword(string providedPassword, string existingPassword)
+        public static bool CompareHashedPassword<T>(Password existingPassword, string password, byte[] salt, params object[] args)
         {
-            throw new NotImplementedException();
+            var providedPassword = typeof(SecurityHelper)
+                .GetMethod("GetPassword")
+                ?.MakeGenericMethod(typeof(T))
+                ?.Invoke(null, new object[] { password, salt, args });
+
+            return existingPassword.Equals(providedPassword);
         }
 
-        /// <summary> Hashes an unencrypted password. </summary>
-        /// <param name="password"> The password. </param>
-        /// <returns> The hashed password. </returns>
-        public static string HashPassword(string password)
+        /// <summary>
+        /// Compares an unencrypted <paramref name="password"/> with a stored, encrypted <paramref name="existingPassword"/>.
+        /// This method uses the specified <paramref name="algorithm"/> to retrieve the hashed version
+        /// of the <paramref name="password"/> and then compares it with the <paramref name="existingPassword"/>.
+        /// </summary>
+        /// <param name="existingPassword">The existing, encrypted password.</param>
+        /// <param name="password">The unencrypted password to be compared.</param>
+        /// <param name="salt">The salt value used in password hashing.</param>
+        /// <param name="algorithm">The password hashing algorithm.</param>
+        /// <param name="args">Additional arguments required for constructing the password algorithm instance.</param>
+        /// <returns>
+        /// <see langword="true"/> if hash comparison succeeds, <see langword="false"/> if it fails.
+        /// </returns>
+        public static bool CompareHashedPassword(Password existingPassword, string password, byte[] salt, IPasswordAlgorithm algorithm, params object[] args)
         {
-            throw new NotImplementedException();
+            var algorithmType = algorithm.GetType();
+
+            var providedPassword = typeof(SecurityHelper)
+                .GetMethod("GetPassword")
+                ?.MakeGenericMethod(algorithmType)
+                ?.Invoke(null, new object[] { password, salt, args });
+
+            return existingPassword.Equals(providedPassword);
+        }
+
+        /// <summary>
+        /// Retrieves a <see cref="Password"/> object using the specified password and generates a random salt value.
+        /// Then it uses that salt to call the overloaded <see cref="GetPassword{T}(string, byte[], object[])"/> method with the given password and
+        /// the generated salt as arguments.
+        /// </summary>
+        /// <typeparam name="T"> The type of <see cref="IPasswordAlgorithm"/> implementation to use. </typeparam>
+        /// <param name="password"> The plaintext password to be hashed. </param>
+        /// <param name="args">
+        ///     Optional constructor arguments for the <see cref="IPasswordAlgorithm"/> implementation
+        ///     instance.
+        /// </param>
+        /// <returns>
+        /// A new <see cref="Password"/> object with the given password and a randomly generated salt, as well as an
+        /// instance of <typeparamref name="T"/> created using any optional constructor arguments provided.
+        /// </returns>
+        /// <seealso cref="SecurityHelper.SALT_SIZE"/>
+        public static Password GetPassword<T>(string password, params object[] args)
+        {
+            var salt = SecurityHelper.GetRandomBytes(SecurityHelper.SALT_SIZE);
+            return GetPassword<T>(password, salt, args);
+        }
+
+        /// <summary>
+        /// Retrieves a <see cref="Password"/> object using the specified password, salt, and optional
+        /// constructor arguments.
+        /// </summary>
+        /// <remarks>
+        /// This method uses reflection to find a constructor for the specified password algorithm type (<typeparamref name="T"/>).
+        /// It emits an error event if a suitable constructor is not found or if there is an error invoking the constructor.
+        /// </remarks>
+        /// <typeparam name="T">
+        ///     The type of <see cref="IPasswordAlgorithm"/> implementation to use.
+        /// </typeparam>
+        /// <param name="password"> The plaintext password to be hashed. </param>
+        /// <param name="salt">
+        ///     A random value used as an additional input to the one-way function that hashes data, a
+        ///     password or passphrase. This is used to make each output different for the same input
+        ///     thus adding security.
+        /// </param>
+        /// <param name="args">
+        ///     Optional constructor arguments for the <see cref="IPasswordAlgorithm"/> implementation
+        ///     instance.
+        /// </param>
+        /// <returns>
+        /// A new <see cref="Password"/> object with the given password and salt, as well as an instance
+        /// of <typeparamref name="T"/> created using the provided constructor arguments.
+        /// </returns>
+        public static Password GetPassword<T>(string password, byte[] salt, params object[] args) where T : IPasswordAlgorithm
+        {
+            var allArgs = args.Prepend(salt).Prepend(password).ToArray(); // Prepend in reverse order so that password precedes salt.
+            var argTypes = allArgs.Select(arg => arg.GetType()).ToArray();
+            var algorithmConstructor = typeof(T).GetConstructor(argTypes);
+
+            if (algorithmConstructor == null)
+            {
+                CapyEventReporter.EmitEvent(EventLevel.Error, "Cannot find a constructor for {0} that matches the given arguments: {1}",
+                    args: new[]
+                    {
+                        typeof(T).Name,
+                        string.Join(",", argTypes.Select(arg => arg.Name))
+                    });
+                return default(Password);
+            }
+
+            var passwordInstance = (T)algorithmConstructor.Invoke(allArgs);
+
+            if (passwordInstance == null)
+            {
+                CapyEventReporter.EmitEvent(EventLevel.Error, "There was an error invoking the constructor for {0} with the given arguments: {1}",
+                    args: new[]
+                    {
+                        typeof(T).Name,
+                        string.Join(",", allArgs)
+                    });
+                return default(Password);
+            }
+
+            return new Password(password, salt, passwordInstance, args);
         }
 
         /// <summary>
@@ -95,7 +201,7 @@ namespace CapyKit.Helpers
         /// </returns>
         public static Password Pbkdf2(string password)
         {
-            var salt = SecurityHelper.GetRandomBytes(saltSize);
+            var salt = SecurityHelper.GetRandomBytes(SALT_SIZE);
             var pwd = new Password(password, salt, Password.Pbkdf2Algorithm);
 
             return pwd;
@@ -186,6 +292,11 @@ namespace CapyKit.Helpers
             return buffer;
         }
 
+        /// <summary>
+        /// Static method that returns a valid character composition based on the given ValidCharacterCollection parameters.
+        /// </summary>
+        /// <param name="validCharacters">An array of ValidCharacterCollection enumeration values representing the desired character sets.</param>
+        /// <returns>A string containing all the characters from the specified character sets.</returns>
         private static string GetValidCharacterComposition(params ValidCharacterCollection[] validCharacters)
         {
             var composition = new StringBuilder();

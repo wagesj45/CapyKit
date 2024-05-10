@@ -16,7 +16,7 @@ namespace CapyKit
     {
         #region Members
 
-        private static Lazy<Pbkdf2Algorithm> algorithm = new Lazy<Pbkdf2Algorithm>(() => new Pbkdf2Algorithm());
+        private static Lazy<Pbkdf2Algorithm> pbkdf2Algorithm = new Lazy<Pbkdf2Algorithm>(() => new Pbkdf2Algorithm());
 
         #endregion
 
@@ -37,13 +37,19 @@ namespace CapyKit
         /// </summary>
         public IPasswordAlgorithm Algorithm { get; private set; }
 
+        #region Preconfigued Password Algorithms
+
+        /// <summary> Gets the preconfigured PBKDF2 algorithm. </summary>
+        /// <value> The preconfigured PBKDF2 algorithm. </value>
         public static Pbkdf2Algorithm Pbkdf2Algorithm
         {
             get
             {
-                return algorithm.Value;
+                return pbkdf2Algorithm.Value;
             }
-        }
+        } 
+
+        #endregion
 
         #endregion
 
@@ -65,9 +71,46 @@ namespace CapyKit
         #region Methods
 
         /// <inheritdoc/>
+        public override bool Equals(object? obj)
+        {
+            if(obj == null) return false; // The object is null, and this object is not.
+
+            if(ReferenceEquals(this, obj)) return true; // The object is literally this object.
+
+            var objPassword = obj as Password;
+
+            if (objPassword == null)
+            {
+                return base.Equals(obj); // Objects aren't the same type. We can fall back to the default comparison.
+            }
+
+            return this.Algorithm.AlgorithmName == objPassword.Algorithm.AlgorithmName
+                && this.Hash == objPassword.Hash
+                && this.Salt == objPassword.Salt;
+        }
+
+        /// <inheritdoc/>
         public override string ToString()
         {
             return string.Format("Hash: {0}, Salt: {1}, Algorithm: {2}", BitConverter.ToString(this.Hash), BitConverter.ToString(this.Salt), this.Algorithm?.AlgorithmName);
+        }
+
+        #endregion
+
+        #region Operators
+
+        /// <inheritdoc/>
+        public static bool operator ==(Password a, Password b)
+        { 
+            return ReferenceEquals(a, b) // Literally the same object.
+                || (ReferenceEquals(a, null) && ReferenceEquals(b,null)) // Both are null
+                || a.Equals(b); // Both are not null but not the same object.
+        }
+
+        /// <inheritdoc/>
+        public static bool operator !=(Password a, Password b)
+        {
+            return !(a == b);
         }
 
         #endregion
