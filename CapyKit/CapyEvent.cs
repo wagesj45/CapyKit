@@ -49,7 +49,7 @@ namespace CapyKit
         /// </param>
         public static void Subscribe(CapyEventHandler callback, EventLevel subscriptionLevel, [CallerMemberName] string origin = null)
         {
-            if (!subscribers[subscriptionLevel].Any())
+            if (!subscribers.ContainsKey(subscriptionLevel))
             {
                 subscribers.Add(subscriptionLevel, new List<(CapyEventHandler Handler, string origin)>());
             }
@@ -97,7 +97,7 @@ namespace CapyKit
         /// </code>
         /// </example>
         /// <seealso cref="CallerMemberNameAttribute"/>
-        internal static void EmitEvent(EventLevel eventLevel, string message, [CallerMemberName] string method = null, params object[] args)
+        public static void EmitEvent(EventLevel eventLevel, string message, [CallerMemberName] string method = null, params object[] args)
         {
             if (!subscribers.ContainsKey(eventLevel))
             {
@@ -137,7 +137,7 @@ namespace CapyKit
         /// </param>
         /// <seealso cref="CallerMemberNameAttribute"/>
         /// <seealso cref="Guid"/>
-        internal static void EmitEventOnce(EventLevel eventLevel, string message, string uniqueIdentifier, [CallerMemberName] string method = null, params object[] args)
+        public static void EmitEventOnce(EventLevel eventLevel, string message, string uniqueIdentifier, [CallerMemberName] string method = null, params object[] args)
         {
             if(uniqueIdentifiers.Contains(uniqueIdentifier))
             {
