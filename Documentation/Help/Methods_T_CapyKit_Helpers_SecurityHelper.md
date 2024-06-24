@@ -6,8 +6,11 @@
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Helpers_SecurityHelper_CompareHashedPassword.md">CompareHashedPassword</a></td>
-<td>Compares an unencrypted <em>providedPassword</em> with a stored, encrypted <em>existingPassword</em>.</td></tr>
+<td><a href="M_CapyKit_Helpers_SecurityHelper_CompareHashedPassword.md">CompareHashedPassword(Password, String, Byte[], IPasswordAlgorithm, Object[])</a></td>
+<td>Compares an unencrypted <em>password</em> with a stored, encrypted <em>existingPassword</em>. This method uses the specified <em>algorithm</em> to retrieve the hashed version of the <em>password</em> and then compares it with the <em>existingPassword</em>.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Helpers_SecurityHelper_CompareHashedPassword__1.md">CompareHashedPassword(T)(Password, String, Byte[], Object[])</a></td>
+<td>Compares an unencrypted <em>password</em> with a stored, encrypted <em>existingPassword</em>. This method uses the specified password algorithm type <em>T</em> to retrieve the hashed version of the <em>password</em> and then compares it with the <em>existingPassword</em>.</td></tr>
 <tr>
 <td><a href="M_CapyKit_Helpers_SecurityHelper_CompareSessionID.md">CompareSessionID</a></td>
 <td>Compares two session identifiers.</td></tr>
@@ -23,6 +26,12 @@
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode" target="_blank" rel="noopener noreferrer">GetHashCode</a></td>
 <td>Serves as the default hash function.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
+<tr>
+<td><a href="M_CapyKit_Helpers_SecurityHelper_GetPassword__1_1.md">GetPassword(T)(String, Object[])</a></td>
+<td>Retrieves a <a href="T_CapyKit_Password.md">Password</a> object using the specified password and generates a random salt value. Then it uses that salt to call the overloaded <a href="M_CapyKit_Helpers_SecurityHelper_GetPassword__1.md">GetPassword(T)(String, Byte[], Object[])</a> method with the given password and the generated salt as arguments.</td></tr>
+<tr>
+<td><a href="M_CapyKit_Helpers_SecurityHelper_GetPassword__1.md">GetPassword(T)(String, Byte[], Object[])</a></td>
+<td>Retrieves a <a href="T_CapyKit_Password.md">Password</a> object using the specified password, salt, and optional constructor arguments.</td></tr>
 <tr>
 <td><a href="M_CapyKit_Helpers_SecurityHelper_GetRandomBytes.md">GetRandomBytes</a></td>
 <td>Generates a new byte array of the specified length with random values.</td></tr>
@@ -40,10 +49,7 @@
 <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
 <td><a href="M_CapyKit_Helpers_SecurityHelper_GetValidCharacterComposition.md">GetValidCharacterComposition</a></td>
-<td> </td></tr>
-<tr>
-<td><a href="M_CapyKit_Helpers_SecurityHelper_HashPassword.md">HashPassword</a></td>
-<td>Hashes an unencrypted password.</td></tr>
+<td>Static method that returns a valid character composition based on the given ValidCharacterCollection parameters.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td>
 <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>

@@ -1,7 +1,7 @@
 # GetApplicationSetting&lt;T&gt; Method
 
 
-Retrieves a setting with the given `key`. Returns the setting as an uncast *T*.
+Retrieves a setting with the given `key`.
 
 
 

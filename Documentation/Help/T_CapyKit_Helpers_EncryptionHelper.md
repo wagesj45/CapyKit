@@ -1,13 +1,40 @@
-# Password Methods
+# EncryptionHelper Class
+
+
+\[Missing &lt;summary&gt; documentation for "T:CapyKit.Helpers.EncryptionHelper"\]
 
 
 
+## Definition
+**Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+
+**C#**
+``` C#
+public class EncryptionHelper
+```
+**F#**
+``` F#
+type EncryptionHelper = class end
+```
+
+<table><tr><td><strong>Inheritance</strong></td><td><a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>  →  EncryptionHelper</td></tr>
+</table>
+
+
+
+## Constructors
+<table>
+<tr>
+<td><a href="M_CapyKit_Helpers_EncryptionHelper__ctor.md">EncryptionHelper</a></td>
+<td>Initializes a new instance of the EncryptionHelper class</td></tr>
+</table>
 
 ## Methods
 <table>
 <tr>
-<td><a href="M_CapyKit_Password_Equals.md">Equals</a></td>
-<td>Determines whether the specified object is equal to the current object.<br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Object.Equals(Object)</a>)</td></tr>
+<td><a href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)" target="_blank" rel="noopener noreferrer">Equals</a></td>
+<td>Determines whether the specified object is equal to the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.finalize" target="_blank" rel="noopener noreferrer">Finalize</a></td>
 <td>Allows an object to try to free resources and perform other cleanup operations before it is reclaimed by garbage collection.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
@@ -21,13 +48,19 @@
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone" target="_blank" rel="noopener noreferrer">MemberwiseClone</a></td>
 <td>Creates a shallow copy of the current <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
 <tr>
-<td><a href="M_CapyKit_Password_ToString.md">ToString</a></td>
-<td>Returns a string that represents the current object.<br />(Overrides <a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">Object.ToString()</a>)</td></tr>
+<td><a href="https://learn.microsoft.com/dotnet/api/system.object.tostring" target="_blank" rel="noopener noreferrer">ToString</a></td>
+<td>Returns a string that represents the current object.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>
+</table>
+
+## Fields
+<table>
+<tr>
+<td><a href="F_CapyKit_Helpers_EncryptionHelper_encryptionKey.md">encryptionKey</a></td>
+<td> </td></tr>
 </table>
 
 ## See Also
 
 
 #### Reference
-<a href="T_CapyKit_Password.md">Password Class</a>  
-<a href="N_CapyKit.md">CapyKit Namespace</a>  
+<a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

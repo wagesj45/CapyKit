@@ -11,7 +11,7 @@ Emits an event with the given severity level, message, unique identifier, and me
 
 **C#**
 ``` C#
-internal static void EmitEventOnce(
+public static void EmitEventOnce(
 	EventLevel eventLevel,
 	string message,
 	string uniqueIdentifier,
@@ -21,7 +21,7 @@ internal static void EmitEventOnce(
 ```
 **F#**
 ``` F#
-internal static member EmitEventOnce : 
+static member EmitEventOnce : 
         eventLevel : EventLevel * 
         message : string * 
         uniqueIdentifier : string * 

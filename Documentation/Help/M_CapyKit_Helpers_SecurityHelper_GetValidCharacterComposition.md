@@ -1,7 +1,7 @@
 # GetValidCharacterComposition Method
 
 
-\[Missing &lt;summary&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.GetValidCharacterComposition(CapyKit.Helpers.ValidCharacterCollection[])"\]
+Static method that returns a valid character composition based on the given ValidCharacterCollection parameters.
 
 
 
@@ -24,11 +24,11 @@ private static member GetValidCharacterComposition :
 
 
 #### Parameters
-<dl><dt>  <a href="T_CapyKit_Helpers_ValidCharacterCollection.md">ValidCharacterCollection</a>[]</dt><dd>\[Missing &lt;param name="validCharacters"/&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.GetValidCharacterComposition(CapyKit.Helpers.ValidCharacterCollection[])"\]</dd></dl>
+<dl><dt>  <a href="T_CapyKit_Helpers_ValidCharacterCollection.md">ValidCharacterCollection</a>[]</dt><dd>An array of ValidCharacterCollection enumeration values representing the desired character sets.</dd></dl>
 
 #### Return Value
 <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a>  
-\[Missing &lt;returns&gt; documentation for "M:CapyKit.Helpers.SecurityHelper.GetValidCharacterComposition(CapyKit.Helpers.ValidCharacterCollection[])"\]
+A string containing all the characters from the specified character sets.
 
 ## See Also
 

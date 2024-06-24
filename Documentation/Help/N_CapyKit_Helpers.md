@@ -14,6 +14,9 @@
 <td><a href="T_CapyKit_Helpers_CompressionHelper.md">CompressionHelper</a></td>
 <td>A class that contains methods for managing data compression.</td></tr>
 <tr>
+<td><a href="T_CapyKit_Helpers_EncryptionHelper.md">EncryptionHelper</a></td>
+<td> </td></tr>
+<tr>
 <td><a href="T_CapyKit_Helpers_LanguageHelper.md">LanguageHelper</a></td>
 <td>Helper class for handling text transformations.</td></tr>
 <tr>
@@ -25,6 +28,13 @@
 <tr>
 <td><a href="T_CapyKit_Helpers_SettingsHelper.md">SettingsHelper</a></td>
 <td>Static class containing helper methods for retrieving and setting application settings.</td></tr>
+</table>
+
+## Interfaces
+<table>
+<tr>
+<td><a href="T_CapyKit_Helpers_IEncryptionAlgorithm.md">IEncryptionAlgorithm</a></td>
+<td> </td></tr>
 </table>
 
 ## Enumerations

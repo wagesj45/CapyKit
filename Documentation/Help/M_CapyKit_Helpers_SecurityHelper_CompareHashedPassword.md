@@ -1,7 +1,7 @@
-# CompareHashedPassword Method
+# CompareHashedPassword(Password, String, Byte[], IPasswordAlgorithm, Object[]) Method
 
 
-Compares an unencrypted *providedPassword* with a stored, encrypted *existingPassword*.
+Compares an unencrypted *password* with a stored, encrypted *existingPassword*. This method uses the specified *algorithm* to retrieve the hashed version of the *password* and then compares it with the *existingPassword*.
 
 
 
@@ -12,21 +12,27 @@ Compares an unencrypted *providedPassword* with a stored, encrypted *existingPas
 **C#**
 ``` C#
 public static bool CompareHashedPassword(
-	string providedPassword,
-	string existingPassword
+	Password existingPassword,
+	string password,
+	byte[] salt,
+	IPasswordAlgorithm algorithm,
+	params Object[] args
 )
 ```
 **F#**
 ``` F#
 static member CompareHashedPassword : 
-        providedPassword : string * 
-        existingPassword : string -> bool 
+        existingPassword : Password * 
+        password : string * 
+        salt : byte[] * 
+        algorithm : IPasswordAlgorithm * 
+        args : Object[] -> bool 
 ```
 
 
 
 #### Parameters
-<dl><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The provided password, unencrypted.</dd><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The existing, encrypted password.</dd></dl>
+<dl><dt>  <a href="T_CapyKit_Password.md">Password</a></dt><dd>The existing, encrypted password.</dd><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.string" target="_blank" rel="noopener noreferrer">String</a></dt><dd>The unencrypted password to be compared.</dd><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.byte" target="_blank" rel="noopener noreferrer">Byte</a>[]</dt><dd>The salt value used in password hashing.</dd><dt>  <a href="T_CapyKit_IPasswordAlgorithm.md">IPasswordAlgorithm</a></dt><dd>The password hashing algorithm.</dd><dt>  <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>[]</dt><dd>Additional arguments required for constructing the password algorithm instance.</dd></dl>
 
 #### Return Value
 <a href="https://learn.microsoft.com/dotnet/api/system.boolean" target="_blank" rel="noopener noreferrer">Boolean</a>  
@@ -37,4 +43,5 @@ true if hash comparison succeeds, false if it fails.
 
 #### Reference
 <a href="T_CapyKit_Helpers_SecurityHelper.md">SecurityHelper Class</a>  
+<a href="Overload_CapyKit_Helpers_SecurityHelper_CompareHashedPassword.md">CompareHashedPassword Overload</a>  
 <a href="N_CapyKit_Helpers.md">CapyKit.Helpers Namespace</a>  

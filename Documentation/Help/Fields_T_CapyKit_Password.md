@@ -6,7 +6,7 @@
 ## Fields
 <table>
 <tr>
-<td><a href="F_CapyKit_Password_algorithm.md">algorithm</a></td>
+<td><a href="F_CapyKit_Password_pbkdf2Algorithm.md">pbkdf2Algorithm</a></td>
 <td> </td></tr>
 </table>
 

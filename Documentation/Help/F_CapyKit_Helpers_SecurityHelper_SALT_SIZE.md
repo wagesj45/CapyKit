@@ -1,7 +1,7 @@
-# saltSize Field
+# SALT_SIZE Field
 
 
-Default size of the generated salt.
+Default size to use when generating a new salt.
 
 
 
@@ -11,11 +11,11 @@ Default size of the generated salt.
 
 **C#**
 ``` C#
-private const int saltSize = 32
+private const int SALT_SIZE = 32
 ```
 **F#**
 ``` F#
-static val mutable private saltSize: int
+static val mutable private SALT_SIZE: int
 ```
 
 

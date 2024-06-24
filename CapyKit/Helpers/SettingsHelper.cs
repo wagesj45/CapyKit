@@ -52,8 +52,7 @@ namespace CapyKit.Helpers
         #region Members
 
         /// <summary>
-        /// Private delegate function that retrieves a setting with the given <c>key</c>. Returns the
-        /// setting as an uncast <see cref="object"/>.
+        /// Private delegate function that retrieves a setting with the given <c>key</c>.
         /// </summary>
         private static Func<string, object> accessor = (key) => default(object);
 
@@ -68,7 +67,7 @@ namespace CapyKit.Helpers
         #region Methods
 
         /// <summary>
-        /// Retrieves a setting with the given <c>key</c>. Returns the setting as an uncast <typeparamref name="T"/>.
+        /// Retrieves a setting with the given <c>key</c>.
         /// </summary>
         /// <typeparam name="T"> The type of the setting to be retrieved. </typeparam>
         /// <param name="settingName"> The name of the setting to retrieve. </param>

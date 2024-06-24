@@ -1,7 +1,7 @@
 # accessor Field
 
 
-Private delegate function that retrieves a setting with the given `key`. Returns the setting as an uncast <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.
+Private delegate function that retrieves a setting with the given `key`.
 
 
 

@@ -1,7 +1,7 @@
 # Pbkdf2Algorithm Property
 
 
-\[Missing &lt;summary&gt; documentation for "P:CapyKit.Password.Pbkdf2Algorithm"\]
+Gets the preconfigured PBKDF2 algorithm.
 
 
 
@@ -21,7 +21,8 @@ static member Pbkdf2Algorithm : Pbkdf2Algorithm with get
 
 
 #### Property Value
-<a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm</a>
+<a href="T_CapyKit_Pbkdf2Algorithm.md">Pbkdf2Algorithm</a>  
+The preconfigured PBKDF2 algorithm.
 
 ## See Also
 

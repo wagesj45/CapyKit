@@ -73,7 +73,7 @@ public int main(string[] args)
 <table>
 <tr>
 <td><a href="M_CapyKit_Helpers_SettingsHelper_GetApplicationSetting__1.md">GetApplicationSetting(T)</a></td>
-<td>Retrieves a setting with the given <code>key</code>. Returns the setting as an uncast <em>T</em>.</td></tr>
+<td>Retrieves a setting with the given <code>key</code>.</td></tr>
 <tr>
 <td><a href="M_CapyKit_Helpers_SettingsHelper_SetAccessorMethod.md">SetAccessorMethod</a></td>
 <td>Sets the function used to retrieve application settings.</td></tr>
@@ -86,7 +86,7 @@ public int main(string[] args)
 <table>
 <tr>
 <td><a href="F_CapyKit_Helpers_SettingsHelper_accessor.md">accessor</a></td>
-<td>Private delegate function that retrieves a setting with the given <code>key</code>. Returns the setting as an uncast <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>.</td></tr>
+<td>Private delegate function that retrieves a setting with the given <code>key</code>.</td></tr>
 <tr>
 <td><a href="F_CapyKit_Helpers_SettingsHelper_detector.md">detector</a></td>
 <td>Private delegate function that detects if a setting with a given <code>key</code> exists. Returns true if the setting exists, false if not.</td></tr>

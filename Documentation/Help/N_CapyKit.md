@@ -14,6 +14,9 @@
 <td><a href="T_CapyKit_CapyEventReporter.md">CapyEventReporter</a></td>
 <td>The CapyEventReporter class is responsible for managing event subscriptions and emissions within CapyKit.</td></tr>
 <tr>
+<td><a href="T_CapyKit_EncryptedValue_1.md">EncryptedValue(T)</a></td>
+<td> </td></tr>
+<tr>
 <td><a href="T_CapyKit_Password.md">Password</a></td>
 <td>Represents a password with its hash, salt and algorithm used for encryption.</td></tr>
 <tr>

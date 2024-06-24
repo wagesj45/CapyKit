@@ -7,7 +7,7 @@
 <table>
 <tr>
 <td><a href="M_CapyKit_Helpers_SettingsHelper_GetApplicationSetting__1.md">GetApplicationSetting(T)</a></td>
-<td>Retrieves a setting with the given <code>key</code>. Returns the setting as an uncast <em>T</em>.</td></tr>
+<td>Retrieves a setting with the given <code>key</code>.</td></tr>
 <tr>
 <td><a href="M_CapyKit_Helpers_SettingsHelper_SetAccessorMethod.md">SetAccessorMethod</a></td>
 <td>Sets the function used to retrieve application settings.</td></tr>

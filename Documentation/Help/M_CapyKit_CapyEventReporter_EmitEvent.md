@@ -11,7 +11,7 @@ Emits an event with the given severity level, message, and method name.
 
 **C#**
 ``` C#
-internal static void EmitEvent(
+public static void EmitEvent(
 	EventLevel eventLevel,
 	string message,
 	string method = null,
@@ -20,7 +20,7 @@ internal static void EmitEvent(
 ```
 **F#**
 ``` F#
-internal static member EmitEvent : 
+static member EmitEvent : 
         eventLevel : EventLevel * 
         message : string * 
         ?method : string * 

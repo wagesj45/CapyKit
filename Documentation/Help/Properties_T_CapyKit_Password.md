@@ -13,7 +13,7 @@
 <td>Gets or sets the hash of the password.</td></tr>
 <tr>
 <td><a href="P_CapyKit_Password_Pbkdf2Algorithm.md">Pbkdf2Algorithm</a></td>
-<td> </td></tr>
+<td>Gets the preconfigured PBKDF2 algorithm.</td></tr>
 <tr>
 <td><a href="P_CapyKit_Password_Salt.md">Salt</a></td>
 <td>Gets or sets the salt used for encryption.</td></tr>

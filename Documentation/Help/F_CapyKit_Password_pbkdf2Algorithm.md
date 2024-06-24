@@ -1,7 +1,7 @@
-# algorithm Field
+# pbkdf2Algorithm Field
 
 
-\[Missing &lt;summary&gt; documentation for "F:CapyKit.Password.algorithm"\]
+\[Missing &lt;summary&gt; documentation for "F:CapyKit.Password.pbkdf2Algorithm"\]
 
 
 
@@ -11,11 +11,11 @@
 
 **C#**
 ``` C#
-private static Lazy<Pbkdf2Algorithm> algorithm
+private static Lazy<Pbkdf2Algorithm> pbkdf2Algorithm
 ```
 **F#**
 ``` F#
-static val mutable private algorithm: Lazy<Pbkdf2Algorithm>
+static val mutable private pbkdf2Algorithm: Lazy<Pbkdf2Algorithm>
 ```
 
 

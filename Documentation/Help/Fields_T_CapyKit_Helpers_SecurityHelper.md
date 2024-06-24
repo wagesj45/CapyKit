@@ -12,8 +12,8 @@
 <td><a href="F_CapyKit_Helpers_SecurityHelper_NUMBER_CHARACTERS.md">NUMBER_CHARACTERS</a></td>
 <td>A string of all the numeric characters.</td></tr>
 <tr>
-<td><a href="F_CapyKit_Helpers_SecurityHelper_saltSize.md">saltSize</a></td>
-<td>Default size of the generated salt.</td></tr>
+<td><a href="F_CapyKit_Helpers_SecurityHelper_SALT_SIZE.md">SALT_SIZE</a></td>
+<td>Default size to use when generating a new salt.</td></tr>
 <tr>
 <td><a href="F_CapyKit_Helpers_SecurityHelper_SPECIAL_CHARACTERS.md">SPECIAL_CHARACTERS</a></td>
 <td>A string of the most common non-alphanumeric characters.</td></tr>
