@@ -11,7 +11,7 @@ Constructor.
 
 **C#**
 ``` C#
-internal Password(
+public Password(
 	string password,
 	byte[] salt,
 	IPasswordAlgorithm algorithm,

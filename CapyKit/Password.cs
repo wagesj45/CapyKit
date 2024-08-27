@@ -47,7 +47,7 @@ namespace CapyKit
             {
                 return pbkdf2Algorithm.Value;
             }
-        } 
+        }
 
         #endregion
 
@@ -58,7 +58,7 @@ namespace CapyKit
         /// <param name="salt">      The salt used for encryption. </param>
         /// <param name="algorithm"> The algorithm used for password encryption. </param>
         /// <param name="args">      A variable-length parameters list containing arguments to include for the <paramref name="algorithm"/>. </param>
-        internal Password(string password, byte[] salt, IPasswordAlgorithm algorithm, params object[] args) 
+        public Password(string password, byte[] salt, IPasswordAlgorithm algorithm, params object[] args) 
         {
             // We know there will always be a salt, so we can prepend it to h
             var augmented = args.Prepend(salt).ToArray();
@@ -85,8 +85,8 @@ namespace CapyKit
             }
 
             return this.Algorithm.AlgorithmName == objPassword.Algorithm.AlgorithmName
-                && this.Hash == objPassword.Hash
-                && this.Salt == objPassword.Salt;
+                && this.Hash.SequenceEqual(objPassword.Hash)
+                && this.Salt.SequenceEqual(objPassword.Salt);
         }
 
         /// <inheritdoc/>

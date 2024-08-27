@@ -20,4 +20,7 @@
 <tr>
 <td><a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a></td>
 <td /></tr>
+<tr>
+<td><a href="N_Tests.md">Tests</a></td>
+<td /></tr>
 </table>
