@@ -1,7 +1,7 @@
 # CapyKit.Attributes Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:CapyKit.Attributes"\]
+Custom attributes for simplifying .NET code behavior.
 
 
 

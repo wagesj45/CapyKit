@@ -1,7 +1,7 @@
 # CapyKit Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:CapyKit"\]
+Core utilities and foundational methods for the CapyKit library.
 
 
 

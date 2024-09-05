@@ -1,7 +1,7 @@
 # CapyKit.Extensions Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:CapyKit.Extensions"\]
+Extension methods for enhancing .NET classes and simplifying operations.
 
 
 

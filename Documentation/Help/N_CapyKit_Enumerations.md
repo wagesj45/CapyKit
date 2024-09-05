@@ -1,7 +1,7 @@
 # CapyKit.Enumerations Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:CapyKit.Enumerations"\]
+Commonly used enumerations for value comparison and logic.
 
 
 

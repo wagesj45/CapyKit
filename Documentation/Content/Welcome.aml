@@ -2,54 +2,36 @@
 <topic id="849aa079-3d64-4cf1-966f-44af23c73160" revisionNumber="1">
 	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
 		<introduction>
-			<para>This is a sample conceptual topic.  You can use this as a starting point for adding more conceptual
-content to your help project.</para>
+			<para>
+				Welcome to the official documentation for <bold>CapyKit</bold> – your go-to utility kit for boosting productivity in any <bold>.NET</bold> project.
+				Originally born out of the <em>HappyCapy</em> project, <bold>CapyKit</bold> is now fully open for the community,
+				offering a wide array of C# utilities and extensions.
+			</para>
+
+			<para>
+				Whether you're looking to integrate some handy extensions into your existing project or you're exploring what
+				<bold>CapyKit</bold> can do for your next venture, you've come to the right place!
+			</para>
 		</introduction>
 
 		<section>
 			<title>Getting Started</title>
 			<content>
-				<para>To get started, add a documentation source to the project (a Visual Studio solution, project, or
-assembly and XML comments file).  See the <legacyBold>Getting Started</legacyBold> topics in the Sandcastle Help
-File Builder's help file for more information.  The following default items are included in this project:</para>
+				<para>
+					This documentation is generated directly from the source code and is constantly evolving as the project progresses.
+					To dive in, check out the full reference material and guides in the [CapyKit Documentation](R_Project_Documentation.md).
+				</para>
 
-				<list class="bullet">
-					<listItem>
-						<para><localUri>ContentLayout.content</localUri> - Use the content layout file to manage the
-conceptual content in the project and define its layout in the table of contents.</para>
-					</listItem>
+				<para>
+					If you're new to the project, bear with us while things are still transitioning from the private repository.
+					We're working hard to make this resource the best it can be.
+				</para>
 
-					<listItem>
-						<para>The <localUri>.\media</localUri> folder - Place images in this folder that you will reference
-from conceptual content using <codeInline>medialLink</codeInline> or <codeInline>mediaLinkInline</codeInline>
-elements.  If you will not have any images in the file, you may remove this folder.</para>
-					</listItem>
-
-					<listItem>
-						<para>The <localUri>.\icons</localUri> folder - This contains a default logo for the help file.  You
-may replace it or remove it and the folder if not wanted.  If removed or if you change the file name, update
-the <ui>Transform Args</ui> project properties page by removing or changing the filename in the
-<codeInline>logoFile</codeInline> transform argument.  Note that unlike images referenced from conceptual topics,
-the logo file should have its <legacyBold>BuildAction</legacyBold> property set to <codeInline>Content</codeInline>.</para>
-					</listItem>
-
-					<listItem>
-						<para>The <localUri>.\Content</localUri> folder - Use this to store your conceptual topics.  You may
-name the files and organize them however you like.  One suggestion is to lay the files out on disk as you have
-them in the content layout file as shown in this project but the choice is yours.  Files can be added via the
-Solution Explorer or from within the content layout file editor.  Files must appear in the content layout file
-in order to be compiled into the help file.</para>
-					</listItem>
-				</list>
-
-				<para>See the <legacyBold>Conceptual Content</legacyBold> topics in the Sandcastle Help File Builder's
-help file for more information.  See the <legacyBold> Sandcastle MAML Guide</legacyBold> for details on Microsoft
-Assistance Markup Language (MAML) which is used to create these topics.</para>
+				<para>
+					For a complete overview of the automatically generated documentation, start by exploring the
+					[API and Utilities Reference](R_Project_Documentation.md)
+				</para>
 			</content>
 		</section>
-
-		<relatedTopics>
-			<link xlink:href="7d36447b-0aab-4ce9-b5ed-e60ec5bee103" />
-		</relatedTopics>
 	</developerConceptualDocument>
 </topic>

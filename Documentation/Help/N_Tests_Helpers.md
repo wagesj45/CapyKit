@@ -1,7 +1,7 @@
 # Tests.Helpers Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:Tests.Helpers"\]
+Contains unit tests specifically focused on verifying the correctness of the code in `CapyKit.Helpers`.
 
 
 

@@ -1,7 +1,7 @@
 # Tests Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:Tests"\]
+Unit tests ensuring CapyKit functions as expected.
 
 
 

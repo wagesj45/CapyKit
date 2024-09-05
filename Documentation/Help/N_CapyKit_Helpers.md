@@ -1,7 +1,7 @@
 # CapyKit.Helpers Namespace
 
 
-\[Missing &lt;summary&gt; documentation for "N:CapyKit.Helpers"\]
+Utility classes for tasks like data manipulation and reflection.
 
 
 

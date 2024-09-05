@@ -62,6 +62,16 @@
     <IncludeFavorites>False</IncludeFavorites>
     <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
     <AppendMarkdownFileExtensionsToUrls>True</AppendMarkdownFileExtensionsToUrls>
+    <ProjectSummary>Welcome to the official documentation for CapyKit, a powerful collection of C# utilities designed to enhance your .NET projects. Below, you&amp;#39%3bll find a list of namespaces included in the library, each offering a unique set of tools, extensions, and helpers to streamline your development process.</ProjectSummary>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="(global)" isDocumented="False" xmlns="" />
+<NamespaceSummaryItem name="CapyKit" isDocumented="True" xmlns="">Core utilities and foundational methods for the CapyKit library.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="CapyKit.Attributes" isDocumented="True" xmlns="">Custom attributes for simplifying .NET code behavior.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="CapyKit.Enumerations" isDocumented="True" xmlns="">Commonly used enumerations for value comparison and logic.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="CapyKit.Extensions" isDocumented="True" xmlns="">Extension methods for enhancing .NET classes and simplifying operations.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="CapyKit.Helpers" isDocumented="True" xmlns="">Utility classes for tasks like data manipulation and reflection.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Tests" isDocumented="True" xmlns="">Unit tests ensuring CapyKit functions as expected.</NamespaceSummaryItem>
+<NamespaceSummaryItem name="Tests.Helpers" isDocumented="True" xmlns="">Contains unit tests specifically focused on verifying the correctness of the code in `CapyKit.Helpers`.</NamespaceSummaryItem></NamespaceSummaries>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->
