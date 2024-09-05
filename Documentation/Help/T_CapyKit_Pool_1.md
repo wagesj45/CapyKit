@@ -7,7 +7,7 @@ A managed pool of resources. This class provides a thread-safe way to manage a c
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

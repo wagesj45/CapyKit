@@ -7,7 +7,7 @@ Custom attribute for formatting values in a specific way.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Attributes.md">CapyKit.Attributes</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

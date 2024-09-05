@@ -7,7 +7,7 @@ Initializes a new instance of the <a href="T_CapyKit_Attributes_EnumerationAttri
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Attributes.md">CapyKit.Attributes</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

@@ -7,7 +7,7 @@ Gets the first available item from the pool and sets its lock.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

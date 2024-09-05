@@ -7,7 +7,7 @@ Determines whether the specified properties are equal.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

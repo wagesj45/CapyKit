@@ -7,7 +7,7 @@ An enumeration that defines the types of characters that can be included in a ra
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

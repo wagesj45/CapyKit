@@ -7,7 +7,7 @@ A class that contains methods for managing secure data processing and cryptograp
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#
@@ -71,6 +71,9 @@ type SecurityHelper = class end
 <tr>
 <td><a href="M_CapyKit_Helpers_SecurityHelper_GetRandomString_1.md">GetRandomString(Int32, ValidCharacterCollection[])</a></td>
 <td>Gets a cryptographically strong random string using the character values found in [!:VALID_CHARACTERS].</td></tr>
+<tr>
+<td><a href="M_CapyKit_Helpers_SecurityHelper_GetSalt.md">GetSalt</a></td>
+<td>Generates a random byte array that can act as a salt.</td></tr>
 <tr>
 <td><a href="https://learn.microsoft.com/dotnet/api/system.object.gettype" target="_blank" rel="noopener noreferrer">GetType</a></td>
 <td>Gets the <a href="https://learn.microsoft.com/dotnet/api/system.type" target="_blank" rel="noopener noreferrer">Type</a> of the current instance.<br />(Inherited from <a href="https://learn.microsoft.com/dotnet/api/system.object" target="_blank" rel="noopener noreferrer">Object</a>)</td></tr>

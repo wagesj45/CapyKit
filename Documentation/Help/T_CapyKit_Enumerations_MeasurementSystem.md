@@ -7,7 +7,7 @@ An enumeration representing different measurement systems.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Enumerations.md">CapyKit.Enumerations</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

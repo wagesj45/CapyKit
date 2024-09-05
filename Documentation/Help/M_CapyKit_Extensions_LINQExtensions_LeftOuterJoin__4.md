@@ -7,7 +7,7 @@ An IEnumable&lt;T&gt; extension method that left outer join.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

@@ -7,7 +7,7 @@ Retrieves a <a href="T_CapyKit_Password.md">Password</a> object using the specif
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.0
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
 
 **C#**
 ``` C#

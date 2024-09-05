@@ -8,12 +8,9 @@
 ## Classes
 <table>
 <tr>
-<td><a href="T_Tests_Passwords.md">Passwords</a></td>
+<td><a href="T_Tests_PasswordTests.md">PasswordTests</a></td>
 <td> </td></tr>
 <tr>
-<td><a href="T_Tests_Passwords_PasswordTests.md">Passwords.PasswordTests</a></td>
-<td> </td></tr>
-<tr>
-<td><a href="T_Tests_StringExtensions.md">StringExtensions</a></td>
+<td><a href="T_Tests_StringExtensionTests.md">StringExtensionTests</a></td>
 <td> </td></tr>
 </table>
