@@ -399,3 +399,4 @@ FodyWeavers.xsd
 
 # NuGet Publish Target
 NuGetPublish.targets
+CapyKit/NuGetPublish.targets
