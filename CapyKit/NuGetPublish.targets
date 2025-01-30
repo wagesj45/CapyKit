@@ -1,6 +1,0 @@
-﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <!-- Placeholder target file for NuGet publishing -->
-  <Target Name="PublishNuGet" AfterTargets="Pack">
-    <!-- To enable NuGet publishing, add an <Exec> command inside the <Target>. -->
-  </Target>
-</Project>
