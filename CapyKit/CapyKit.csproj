@@ -16,4 +16,6 @@
 		</None>
 	</ItemGroup>
 
+	<Import Project="NuGetPublish.targets" Condition="Exists('NuGetPublish.targets')" />
+
 </Project>
