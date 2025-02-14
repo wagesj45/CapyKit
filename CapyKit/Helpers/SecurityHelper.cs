@@ -50,7 +50,7 @@ namespace CapyKit.Helpers
         public static bool CompareHashedPassword<T>(Password existingPassword, string password, byte[] salt, params object[] args)
         {
             var providedPassword = typeof(SecurityHelper)
-                .GetMethod("GetPassword")
+                .GetMethod("GetPassword", new Type[] { typeof(string), typeof(byte[]), typeof(object[]) })
                 ?.MakeGenericMethod(typeof(T))
                 ?.Invoke(null, new object[] { password, salt, args });
 
@@ -75,7 +75,7 @@ namespace CapyKit.Helpers
             var algorithmType = algorithm.GetType();
 
             var providedPassword = typeof(SecurityHelper)
-                .GetMethod("GetPassword")
+                .GetMethod("GetPassword", new Type[] {typeof(string), typeof(byte[]), typeof(object[])})
                 ?.MakeGenericMethod(algorithmType)
                 ?.Invoke(null, new object[] { password, salt, args });
 
@@ -131,10 +131,9 @@ namespace CapyKit.Helpers
         /// </returns>
         public static Password GetPassword<T>(string password, byte[] salt, params object[] args) where T : IPasswordAlgorithm
         {
-            var allArgs = args.Prepend(salt).Prepend(password).ToArray(); // Prepend in reverse order so that password precedes salt.
-            var argTypes = allArgs.Select(arg => arg.GetType()).ToArray();
+            //var allArgs = args.Prepend(salt).Prepend(password).ToArray(); // Prepend in reverse order so that password precedes salt.
+            var argTypes = args.Select(arg => arg.GetType()).ToArray();
             var algorithmConstructor = typeof(T).GetConstructor(argTypes);
-
             if (algorithmConstructor == null)
             {
                 CapyEventReporter.EmitEvent(EventLevel.Error, "Cannot find a constructor for {0} that matches the given arguments: {1}",
@@ -146,7 +145,7 @@ namespace CapyKit.Helpers
                 return default(Password);
             }
 
-            var passwordInstance = (T)algorithmConstructor.Invoke(allArgs);
+            var passwordInstance = (T)algorithmConstructor.Invoke(args);
 
             if (passwordInstance == null)
             {
@@ -154,7 +153,7 @@ namespace CapyKit.Helpers
                     args: new[]
                     {
                         typeof(T).Name,
-                        string.Join(",", allArgs)
+                        string.Join(",", args)
                     });
                 return default(Password);
             }
@@ -208,10 +207,19 @@ namespace CapyKit.Helpers
         }
 
         /// <summary> Gets a cryptographically strong random password. </summary>
-        /// <param name="length"> The length of the password to generate. </param>
+        /// <param name="length">          The length of the password to generate. </param>
+        /// <param name="validCharacters">
+        ///     An array of <see cref="ValidCharacterCollection"/> enumeration values representing the desired
+        ///     character sets.
+        /// </param>
         /// <returns> The password. </returns>
         public static string GetRandomPassword(int length, params ValidCharacterCollection[] validCharacters)
         {
+            if (validCharacters.Length == 0)
+            {
+                CapyEventReporter.EmitEvent(EventLevel.Warning, "No valid characters were provided, so all valid caharacters will be assumed.");
+                validCharacters = new[] { ValidCharacterCollection.Lowercase, ValidCharacterCollection.Uppercase, ValidCharacterCollection.Numbers, ValidCharacterCollection.Special };
+            }
             return GetRandomString(length, validCharacters);
         }
 

@@ -17,6 +17,9 @@ Utility classes for tasks like data manipulation and reflection.
 <td><a href="T_CapyKit_Helpers_EncryptionHelper.md">EncryptionHelper</a></td>
 <td> </td></tr>
 <tr>
+<td><a href="T_CapyKit_Helpers_KeyHelper.md">KeyHelper</a></td>
+<td>A class that contains methods for managing key creation and validation against a master key.</td></tr>
+<tr>
 <td><a href="T_CapyKit_Helpers_LanguageHelper.md">LanguageHelper</a></td>
 <td>Helper class for handling text transformations.</td></tr>
 <tr>

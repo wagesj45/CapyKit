@@ -7,7 +7,7 @@ A *T* extension method that parses a string into an enumeration.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#

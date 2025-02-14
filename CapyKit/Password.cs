@@ -194,6 +194,16 @@ namespace CapyKit
 
         #endregion
 
+        #region Constructor
+
+        /// <summary> Default constructor. </summary>
+        public Pbkdf2Algorithm()
+        {
+            //
+        }
+
+        #endregion
+
         #region Methods
 
         /// <summary> Encrypts the given password using a PBKDF2 algorithm. </summary>

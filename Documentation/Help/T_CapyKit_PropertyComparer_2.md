@@ -7,7 +7,7 @@ A object comparer that can accept a lambda expression to compare properties.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#
@@ -74,6 +74,13 @@ using System; using System.Collections.Generic; using System.Linq; class Program
 <tr>
 <td><a href="F_CapyKit_PropertyComparer_2_expression.md">expression</a></td>
 <td>The expression to retrieve the property.</td></tr>
+</table>
+
+## Extension Methods
+<table>
+<tr>
+<td><a href="M_CapyKit_Extensions_ObjectExtensions_UpdateProperties.md">UpdateProperties</a></td>
+<td>An object extension method that updates the properties of a given <em>target</em> object with the values from a given <em>source</em> object.<br />(Defined by <a href="T_CapyKit_Extensions_ObjectExtensions.md">ObjectExtensions</a>)</td></tr>
 </table>
 
 ## See Also

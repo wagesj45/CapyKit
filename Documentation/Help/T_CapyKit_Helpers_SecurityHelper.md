@@ -7,7 +7,7 @@ A class that contains methods for managing secure data processing and cryptograp
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Helpers.md">CapyKit.Helpers</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#
@@ -111,6 +111,13 @@ type SecurityHelper = class end
 <tr>
 <td><a href="F_CapyKit_Helpers_SecurityHelper_UPPER_CASE_CHARACTERS.md">UPPER_CASE_CHARACTERS</a></td>
 <td>A string of all the upper case characters.</td></tr>
+</table>
+
+## Extension Methods
+<table>
+<tr>
+<td><a href="M_CapyKit_Extensions_ObjectExtensions_UpdateProperties.md">UpdateProperties</a></td>
+<td>An object extension method that updates the properties of a given <em>target</em> object with the values from a given <em>source</em> object.<br />(Defined by <a href="T_CapyKit_Extensions_ObjectExtensions.md">ObjectExtensions</a>)</td></tr>
 </table>
 
 ## See Also

@@ -7,7 +7,7 @@ A hash set storing unique identifiers for events intended to only be emitted onc
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#

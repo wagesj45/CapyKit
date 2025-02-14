@@ -14,6 +14,9 @@ Core utilities and foundational methods for the CapyKit library.
 <td><a href="T_CapyKit_CapyEventReporter.md">CapyEventReporter</a></td>
 <td>The CapyEventReporter class is responsible for managing event subscriptions and emissions within CapyKit.</td></tr>
 <tr>
+<td><a href="T_CapyKit_Color.md">Color</a></td>
+<td>An object representing a color.</td></tr>
+<tr>
 <td><a href="T_CapyKit_EncryptedValue_1.md">EncryptedValue(T)</a></td>
 <td> </td></tr>
 <tr>
@@ -50,9 +53,9 @@ Core utilities and foundational methods for the CapyKit library.
 ## Enumerations
 <table>
 <tr>
-<td><a href="T_CapyKit_Color.md">Color</a></td>
-<td>Enum representing a set of named colors with their corresponding HEX values. These colors are inspired by the XKCD color palette (<a href="https://xkcd.com/color/rgb/" target="_blank" rel="noopener noreferrer">Link</a>).</td></tr>
-<tr>
 <td><a href="T_CapyKit_EventLevel.md">EventLevel</a></td>
 <td>Enumeration representing different event level severity values.</td></tr>
+<tr>
+<td><a href="T_CapyKit_NamedColor.md">NamedColor</a></td>
+<td>Enum representing a set of named colors with their corresponding HEX values. These colors are inspired by the XKCD color palette (<a href="https://xkcd.com/color/rgb/" target="_blank" rel="noopener noreferrer">Link</a>).</td></tr>
 </table>

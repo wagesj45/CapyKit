@@ -7,7 +7,7 @@ Gets the name of the algorithm.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#

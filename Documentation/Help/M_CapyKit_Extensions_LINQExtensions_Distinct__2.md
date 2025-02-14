@@ -7,7 +7,7 @@ Enumerates distinct items in this collection as defined by the key *property*.
 
 ## Definition
 **Namespace:** <a href="N_CapyKit_Extensions.md">CapyKit.Extensions</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#

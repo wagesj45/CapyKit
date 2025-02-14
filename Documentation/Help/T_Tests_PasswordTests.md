@@ -75,6 +75,13 @@ type PasswordTests = class end
 <td> </td></tr>
 </table>
 
+## Extension Methods
+<table>
+<tr>
+<td><a href="M_CapyKit_Extensions_ObjectExtensions_UpdateProperties.md">UpdateProperties</a></td>
+<td>An object extension method that updates the properties of a given <em>target</em> object with the values from a given <em>source</em> object.<br />(Defined by <a href="T_CapyKit_Extensions_ObjectExtensions.md">ObjectExtensions</a>)</td></tr>
+</table>
+
 ## See Also
 
 

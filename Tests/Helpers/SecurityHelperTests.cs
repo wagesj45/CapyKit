@@ -88,9 +88,9 @@ namespace Tests.Helpers
         //    var password = SecurityHelper.GetPassword<Pbkdf2Algorithm>(Password, Salt);
 
         //    Assert.IsNotNull(password);
-        //    Assert.AreEqual(Password, password.);
+        //    Assert.AreEqual(Password, password);
         //}
-        
+
         //[Test]
         //public void GetPassword_WithDifferentAlgorithm_ShouldReturnDifferentHashes()
         //{

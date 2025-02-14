@@ -7,7 +7,7 @@ A managed pool of resources. This class provides a thread-safe way to manage a c
 
 ## Definition
 **Namespace:** <a href="N_CapyKit.md">CapyKit</a>  
-**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.2
+**Assembly:** CapyKit (in CapyKit.dll) Version: 1.0.4
 
 **C#**
 ``` C#
@@ -85,6 +85,13 @@ type Pool<'T> = class end
 <tr>
 <td><a href="F_CapyKit_Pool_1_poolSize.md">poolSize</a></td>
 <td>(Immutable) The number of items in the pool.</td></tr>
+</table>
+
+## Extension Methods
+<table>
+<tr>
+<td><a href="M_CapyKit_Extensions_ObjectExtensions_UpdateProperties.md">UpdateProperties</a></td>
+<td>An object extension method that updates the properties of a given <em>target</em> object with the values from a given <em>source</em> object.<br />(Defined by <a href="T_CapyKit_Extensions_ObjectExtensions.md">ObjectExtensions</a>)</td></tr>
 </table>
 
 ## See Also
